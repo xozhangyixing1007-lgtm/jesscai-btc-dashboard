@@ -23,31 +23,35 @@
     .brand{display:flex;align-items:center;gap:13px}.coin{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#ffcb67,#f59c24);color:#201200;font-weight:900;font-size:22px;box-shadow:0 0 25px rgba(255,184,64,.25)}
     h1{font-size:20px;margin:0}.sub{color:var(--muted);font-size:12px;margin-top:2px}
     .status{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.pill{border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.025);color:var(--muted);font-size:12px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);margin-right:6px}.dot.live{background:var(--green);box-shadow:0 0 0 4px rgba(68,214,159,.11)}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:linear-gradient(180deg,rgba(19,25,36,.96),rgba(13,18,27,.98));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}.span12{grid-column:span 12}.span8{grid-column:span 8}.span7{grid-column:span 7}.span6{grid-column:span 6}.span5{grid-column:span 5}.span4{grid-column:span 4}.span3{grid-column:span 3}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{order:30;background:linear-gradient(180deg,rgba(19,25,36,.96),rgba(13,18,27,.98));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}.priority-hero{order:1}.priority-chart{order:2}.priority-map{order:3}.priority-active{order:4}.priority-risk{order:5}.priority-decision-log{order:6}.priority-model{order:7}.priority-admin{order:20}.span12{grid-column:span 12}.span8{grid-column:span 8}.span7{grid-column:span 7}.span6{grid-column:span 6}.span5{grid-column:span 5}.span4{grid-column:span 4}.span3{grid-column:span 3}
     .section-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.section-title h2{font-size:14px;margin:0;letter-spacing:.02em}.tiny{font-size:11px;color:var(--muted)}
     .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:14px}.price-big{font-size:40px;font-weight:780;letter-spacing:-.04em}.change{font-size:13px;margin-left:8px}.green{color:var(--green)}.red{color:var(--red)}.amber{color:var(--amber)}.blue{color:var(--blue)}.muted{color:var(--muted)}
     .metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.metric{border:1px solid var(--line);background:rgba(255,255,255,.02);border-radius:13px;padding:10px}.metric .k{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.metric .v{font-size:15px;font-weight:700;margin-top:3px}
     .callout{border-radius:15px;padding:13px 14px;border:1px solid var(--line);background:rgba(255,255,255,.025)}.callout.good{border-color:rgba(68,214,159,.35);background:rgba(68,214,159,.06)}.callout.bad{border-color:rgba(255,107,123,.35);background:rgba(255,107,123,.06)}.callout.wait{border-color:rgba(255,202,99,.3);background:rgba(255,202,99,.05)}.callout.lock{border-color:rgba(255,107,123,.45);background:rgba(255,107,123,.08)}
     .signal{font-size:29px;font-weight:850;letter-spacing:.05em}.prob{display:flex;gap:10px;margin-top:10px}.probbar{height:8px;background:#252c3c;border-radius:99px;overflow:hidden;flex:1}.probbar>i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--green));width:50%}
+    .meter-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.meter{border:1px solid var(--line);border-radius:12px;background:#0b111a;padding:10px}.meter-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.meter-track{height:9px;background:#202838;border-radius:99px;overflow:hidden}.meter-fill{display:block;height:100%;width:0%;background:var(--amber);transition:width .2s ease}.meter-fill.long{background:linear-gradient(90deg,#1e7b61,var(--green))}.meter-fill.short{background:linear-gradient(90deg,#873044,var(--red))}.meter-fill.exit{background:linear-gradient(90deg,var(--green),var(--amber),var(--red))}
     #chart{height:480px;width:100%;border-radius:13px;overflow:hidden;background:#0b1018}.chart-fallback{height:480px;display:none;align-items:center;justify-content:center;color:var(--muted)}
     .tabs{display:flex;gap:6px}.tab{border:1px solid var(--line);background:#0e1420;color:var(--muted);padding:6px 9px;border-radius:9px}.tab.active{color:var(--text);border-color:#425373;background:#172034}
     .setup-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.setup{border-radius:16px;padding:15px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.setup.long{border-top:2px solid var(--green)}.setup.short{border-top:2px solid var(--red)}.setup h3{margin:0 0 9px;font-size:15px}.level-list{display:grid;gap:7px}.level{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(130,150,180,.18);padding-bottom:6px}.level:last-child{border:0}.level b{font-variant-numeric:tabular-nums}
     .gate{display:grid;gap:8px}.gate-item{display:flex;gap:9px;align-items:flex-start;padding:8px 9px;border-radius:11px;border:1px solid var(--line);background:rgba(255,255,255,.018)}.gate-icon{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;font-size:11px;background:#232d3f;color:var(--muted)}.gate-item.pass .gate-icon{background:rgba(68,214,159,.16);color:var(--green)}.gate-item.fail .gate-icon{background:rgba(255,107,123,.14);color:var(--red)}
     .inputs{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.field{display:grid;gap:5px}.field label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}.field input,.field select{width:100%;background:#0b1019;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px;outline:0}.field input:focus,.field select:focus{border-color:#4b6592}
+    .alert-grid{display:grid;grid-template-columns:1.2fr 1.2fr .65fr;gap:9px;align-items:end}.alert-toggle{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:13px;background:#0b111a;padding:10px}.alert-toggle input{margin-top:3px;accent-color:#44d69f}
     .btn{border:1px solid var(--line);background:#172033;color:var(--text);padding:9px 12px;border-radius:10px}.btn.primary{background:linear-gradient(135deg,#5e7bff,#8e6cff);border:0}.btn.green{background:rgba(68,214,159,.12);color:var(--green);border-color:rgba(68,214,159,.28)}.btn.red{background:rgba(255,107,123,.1);color:var(--red);border-color:rgba(255,107,123,.27)}.btnrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
     .risk-output{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}.riskbox{background:#0c121c;border:1px solid var(--line);border-radius:13px;padding:10px}.riskbox .label{font-size:10px;color:var(--muted)}.riskbox .num{font-size:18px;font-weight:760;margin-top:4px}.riskbox.locked{border-color:rgba(255,107,123,.35);background:rgba(255,107,123,.055)}
     table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px 7px;border-bottom:1px solid rgba(120,140,170,.13);white-space:nowrap}th{color:var(--muted);font-weight:550}.table-wrap{overflow:auto}
     .corr-row{display:grid;grid-template-columns:110px 1fr 60px;gap:9px;align-items:center;margin:8px 0}.corr-track{height:8px;background:#232b39;border-radius:99px;position:relative;overflow:hidden}.corr-zero{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#647087}.corr-fill{position:absolute;top:0;height:100%;background:var(--cyan)}
     .model-score{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.scorebox{border:1px solid var(--line);border-radius:12px;padding:10px;background:#0b111a}.scorebox .big{font-size:22px;font-weight:800}.checkpoint-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.checkpoint{border:1px solid var(--line);border-radius:12px;padding:10px;background:#0b111a}.checkpoint.done{border-color:rgba(68,214,159,.32);background:rgba(68,214,159,.055)}.checkpoint.next{border-color:rgba(255,202,99,.34);background:rgba(255,202,99,.055)}
     .macro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.macro{border:1px solid var(--line);background:#0b111a;border-radius:12px;padding:10px}.macro strong{display:block;font-size:18px;margin-top:3px}.macro small{color:var(--muted)}
+    .monitor-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.monitor-toggle{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:13px;background:#0b111a;padding:10px}.monitor-toggle input{margin-top:3px;accent-color:#44d69f}.stagebar{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.stage{border:1px solid var(--line);border-radius:12px;background:#0b111a;padding:9px}.stage.hit{border-color:rgba(68,214,159,.35);background:rgba(68,214,159,.06)}.stage.danger{border-color:rgba(255,107,123,.42);background:rgba(255,107,123,.075)}.stage.now{border-color:rgba(255,202,99,.38);background:rgba(255,202,99,.07)}
     .note{font-size:11px;color:var(--muted);margin-top:9px}.warn{color:#ffd17c}.hr{height:1px;background:var(--line);margin:13px 0}
     .journal-controls{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;align-items:end}.journal-controls .field:nth-child(7){grid-column:span 2}
     textarea{width:100%;min-height:112px;resize:vertical;background:#0b1019;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px;outline:0}
     input[type=file]{width:100%;background:#0b1019;border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:9px}
     .sync-grid{display:grid;grid-template-columns:1fr 1.1fr .9fr;gap:12px;align-items:start}.mini-list{display:grid;gap:8px}.mini-item{border:1px solid var(--line);border-radius:12px;background:#0b111a;padding:10px}.mini-item b{display:block;margin-bottom:3px}
+    .lab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.lab-grid .scorebox .big{font-size:20px}
     .footer{color:var(--muted);font-size:11px;padding:16px 4px 2px;text-align:center}.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;border:1px solid var(--line);border-bottom-width:2px;padding:1px 5px;border-radius:5px;background:#111826}
-    @media(max-width:1050px){.span8,.span7,.span6,.span5,.span4,.span3{grid-column:span 12}.hero{grid-template-columns:1fr}.metric-row,.macro-grid{grid-template-columns:repeat(2,1fr)}.setup-grid{grid-template-columns:1fr}.inputs{grid-template-columns:repeat(2,1fr)}.risk-output{grid-template-columns:repeat(2,1fr)}.journal-controls{grid-template-columns:repeat(2,1fr)}.journal-controls .field:nth-child(7){grid-column:span 2}.checkpoint-grid{grid-template-columns:repeat(3,1fr)}.sync-grid{grid-template-columns:1fr}}
-    @media(max-width:620px){.app{padding:12px}.topbar{align-items:flex-start;flex-direction:column}.price-big{font-size:32px}.metric-row,.macro-grid,.model-score,.inputs,.risk-output{grid-template-columns:1fr 1fr}.checkpoint-grid{grid-template-columns:repeat(2,1fr)}#chart,.chart-fallback{height:380px}}
+    @media(max-width:1050px){.span8,.span7,.span6,.span5,.span4,.span3{grid-column:span 12}.hero{grid-template-columns:1fr}.metric-row,.macro-grid{grid-template-columns:repeat(2,1fr)}.setup-grid{grid-template-columns:1fr}.inputs,.alert-grid{grid-template-columns:repeat(2,1fr)}.risk-output,.monitor-grid{grid-template-columns:repeat(2,1fr)}.journal-controls{grid-template-columns:repeat(2,1fr)}.journal-controls .field:nth-child(7){grid-column:span 2}.checkpoint-grid{grid-template-columns:repeat(3,1fr)}.sync-grid{grid-template-columns:1fr}.lab-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.app{padding:12px}.topbar{align-items:flex-start;flex-direction:column}.price-big{font-size:32px}.metric-row,.macro-grid,.model-score,.inputs,.alert-grid,.risk-output,.monitor-grid{grid-template-columns:1fr 1fr}.checkpoint-grid,.stagebar{grid-template-columns:repeat(2,1fr)}#chart,.chart-fallback{height:380px}}
   </style>
 </head>
 <body>
@@ -62,7 +66,7 @@
   </div>
 
   <div class="grid">
-    <section class="card span8">
+    <section class="card span8 priority-hero">
       <div class="hero">
         <div>
           <div class="tiny">LIVE BTCUSDT</div>
@@ -79,23 +83,41 @@
           <div class="signal amber" id="signal">WAIT</div>
           <div id="signalReason" class="muted">Waiting for live candles and confirmation.</div>
           <div class="prob"><span class="tiny">Lower <b id="pDown">50%</b></span><div class="probbar"><i id="probFill"></i></div><span class="tiny">Higher <b id="pUp">50%</b></span></div>
+          <div class="meter-grid">
+            <div class="meter"><div class="meter-head"><span class="tiny">Long entry readiness</span><b id="longReadyPct">--</b></div><div class="meter-track"><i class="meter-fill long" id="longReadyFill"></i></div><div class="tiny" id="longReadyText">Waiting for structure.</div></div>
+            <div class="meter"><div class="meter-head"><span class="tiny">Short entry readiness</span><b id="shortReadyPct">--</b></div><div class="meter-track"><i class="meter-fill short" id="shortReadyFill"></i></div><div class="tiny" id="shortReadyText">Waiting for structure.</div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="card span4">
-      <div class="section-title"><h2>Your rebuild guardrails</h2><span class="tiny">Aggressive profile</span></div>
+    <section class="card span4 priority-hero">
+      <div class="section-title"><h2>Confidence level</h2><span class="tiny" id="confidenceStatus">Waiting</span></div>
       <div class="level-list">
-        <div class="level"><span>Default account</span><b>1,500 USDT</b></div>
-        <div class="level"><span>Planned risk / trade</span><b>2.5%-3.0%</b></div>
-        <div class="level"><span>Normal leverage</span><b>7x-10x isolated</b></div>
-        <div class="level"><span>Daily circuit breaker</span><b>2 consecutive or 3 total losses</b></div>
-        <div class="level"><span>Entry rule</span><b>4/6 confirmation minimum</b></div>
+        <div class="level"><span>Current bias</span><b id="confidenceBias">--</b></div>
+        <div class="level"><span>Confidence</span><b id="confidencePct">--</b></div>
+        <div class="level"><span>Gate strength</span><b id="confidenceGates">--</b></div>
+        <div class="level"><span>Structure</span><b id="confidenceStructure">--</b></div>
+        <div class="level"><span>Risk permission</span><b id="confidenceRisk">--</b></div>
       </div>
-      <div class="note warn">The dashboard never places orders. It only calculates and records setups. Stops should be entered at the exchange before or immediately after entry.</div>
+      <div class="meter" style="margin-top:10px"><div class="meter-head"><span class="tiny">Call confidence</span><b id="confidenceMeterPct">--</b></div><div class="meter-track"><i class="meter-fill" id="confidenceFill"></i></div><div class="tiny" id="confidenceText">Waiting for live analysis.</div></div>
+      <div class="note warn">Decision support only. The dashboard highlights whether the setup is close enough for manual review; it never places orders.</div>
     </section>
 
-    <section class="card span12">
+    <section class="card span12 priority-admin">
+      <div class="section-title"><h2>Email alerts</h2><span class="tiny" id="emailStatus">Not armed</span></div>
+      <div class="alert-grid">
+        <label class="alert-toggle"><input id="emailEnabled" type="checkbox"><span><b>Send email on LONG / SHORT call</b><span class="tiny">Fires only when the master call becomes a qualified contract setup.</span></span></label>
+        <div class="field"><label>Alert recipient</label><input id="emailTo" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field"><label>Cooldown minutes</label><input id="emailCooldown" type="number" min="5" max="240" step="5" value="30"></div>
+        <div class="field"><label>Email webhook endpoint</label><input id="emailEndpoint" type="url" placeholder="/api/send-alert"></div>
+        <div class="field"><label>Webhook token</label><input id="emailToken" type="password" autocomplete="off" placeholder="secret token stored only in this browser"></div>
+        <div class="btnrow"><button class="btn primary" id="saveEmailAlerts">Save alerts</button><button class="btn" id="testEmailAlert">Test</button><button class="btn" id="draftEmailAlert">Draft</button></div>
+      </div>
+      <div class="note">Automatic email uses the site backend endpoint and requires QQ Mail SMTP secrets on Cloudflare. Without backend secrets, the dashboard can prepare an email draft but cannot silently send.</div>
+    </section>
+
+    <section class="card span12 priority-risk">
       <div class="section-title"><h2>Recovery cockpit</h2><span class="tiny">Permission to trade comes before direction</span></div>
       <div class="model-score">
         <div class="scorebox"><div class="tiny">Today status</div><div class="big" id="dayStatus">--</div></div>
@@ -107,7 +129,7 @@
       <div class="note" id="recoveryNote">Enter your actual capital in the sizing calculator. The checkpoints update from that number and the journal enforces the two-loss / three-loss stop rule.</div>
     </section>
 
-    <section class="card span12">
+    <section class="card span12 priority-chart">
       <div class="section-title">
         <div><h2>Live trading graph</h2><div class="tiny">Candles from Binance public market data. Entry, stop, target, support and resistance lines update with the analysis engine.</div></div>
         <div class="tabs"><button class="tab active" data-tf="5m">5m</button><button class="tab" data-tf="15m">15m</button><button class="tab" data-tf="1h">1h</button></div>
@@ -115,7 +137,7 @@
       <div id="chart"></div><div id="chartFallback" class="chart-fallback">Chart library unavailable. Live analysis can still run if market data is reachable.</div>
     </section>
 
-    <section class="card span8">
+    <section class="card span8 priority-map">
       <div class="section-title"><h2>Two-case contract map</h2><span class="tiny">Trade the reaction, not the prediction</span></div>
       <div class="setup-grid">
         <div class="setup long">
@@ -147,13 +169,43 @@
       </div>
     </section>
 
-    <section class="card span4">
+    <section class="card span4 priority-map">
       <div class="section-title"><h2>High-conviction gate</h2><span id="gateCount" class="pill">0/6</span></div>
       <div class="gate" id="gate"></div>
       <div class="note">A direction must clear at least 4 of 6 checks. The engine will still refuse a trade if price is directly inside major support/resistance or after an extended impulse candle.</div>
     </section>
 
-    <section class="card span7">
+    <section class="card span12 priority-active">
+      <div class="section-title"><h2>Active contract monitor</h2><span class="tiny" id="activeUpdated">No active contract</span></div>
+      <div class="monitor-toggle">
+        <input id="trackSetup" type="checkbox">
+        <label for="trackSetup"><b>I entered the current suggested contract</b><div class="tiny" id="trackHint">This becomes available only when the master call is LONG or SHORT. It records the current entry plan locally and watches stop / TP levels against live BTC.</div></label>
+      </div>
+      <div class="hr"></div>
+      <div class="monitor-grid">
+        <div class="scorebox"><div class="tiny">Tracked side</div><div class="big" id="activeSide">--</div></div>
+        <div class="scorebox"><div class="tiny">Live mark</div><div class="big" id="activeLive">--</div></div>
+        <div class="scorebox"><div class="tiny">Live PnL</div><div class="big" id="activePnl">--</div></div>
+        <div class="scorebox"><div class="tiny">Next level</div><div class="big" id="activeNext">--</div></div>
+        <div class="scorebox"><div class="tiny">Action now</div><div class="big" id="activeAction">WAIT</div></div>
+      </div>
+      <div class="meter" style="margin-top:10px"><div class="meter-head"><span class="tiny">Contract exit pressure</span><b id="exitPressurePct">--</b></div><div class="meter-track"><i class="meter-fill exit" id="exitPressureFill"></i></div><div class="tiny" id="exitPressureText">No active contract pressure.</div></div>
+      <div class="hr"></div>
+      <div class="stagebar" id="activeStages">
+        <div class="stage"><div class="tiny">Entry</div><b>--</b></div>
+        <div class="stage"><div class="tiny">Stop</div><b>--</b></div>
+        <div class="stage"><div class="tiny">TP1</div><b>--</b></div>
+        <div class="stage"><div class="tiny">TP2</div><b>--</b></div>
+      </div>
+      <div class="hr"></div>
+      <div class="mini-list" id="activeInstructions">
+        <div class="mini-item"><b>No live contract being tracked</b><span class="tiny">When the master call becomes LONG or SHORT and you actually enter on Binance, tick the box above. The dashboard will keep the live exit checklist visible.</span></div>
+      </div>
+      <div class="btnrow" style="margin-top:10px"><label class="monitor-toggle" style="padding:8px 10px"><input id="activeTp1Done" type="checkbox"><span><b>TP1 partial taken</b><span class="tiny">Use this after you reduce size at TP1 so the monitor switches to runner management.</span></span></label><button class="btn green" id="closeActiveNow">Mark active closed at live price</button><button class="btn red" id="clearActive">Clear active monitor</button></div>
+      <div class="note warn">This is a tracking checklist only. It does not place, close, or modify any Binance order.</div>
+    </section>
+
+    <section class="card span7 priority-risk">
       <div class="section-title"><h2>Position sizing calculator</h2><span class="tiny">Sizing from stop distance, not from emotion</span></div>
       <div class="inputs">
         <div class="field"><label>Capital left (USDT)</label><input id="capital" type="number" value="1500" min="50" step="10"></div>
@@ -183,7 +235,7 @@
       <div class="note">Manual mode keeps the master call on WAIT until the real retest and gate evidence are visible. It is for sizing and planning, not for forcing an entry.</div>
     </section>
 
-    <section class="card span5">
+    <section class="card span5 priority-active">
       <div class="section-title"><h2>Contract exit protocol</h2><span class="tiny">Best exit is conditional</span></div>
       <div class="level-list">
         <div class="level"><span>Invalidation</span><b class="red">Exit 100%</b></div>
@@ -196,7 +248,7 @@
       <div class="note warn">Never move a stop farther away just to avoid realizing a loss. If the setup invalidates, the statistical premise has changed.</div>
     </section>
 
-    <section class="card span7">
+    <section class="card span7 priority-model">
       <div class="section-title"><h2>Adaptive direction model</h2><span class="tiny">Recent BTC regime + your trade outcomes</span></div>
       <div class="model-score">
         <div class="scorebox"><div class="tiny">4H model P(higher)</div><div class="big" id="modelProb">--</div></div>
@@ -207,9 +259,13 @@
       <div class="tiny">Rolling factor correlation with the next 4-hour BTC return</div>
       <div id="corrTable"></div>
       <div class="note">The model is a compact rolling logistic classifier plus factor correlations. It retrains from recent candles every refresh. It deliberately caps probability extremes because a short market sample can look more certain than it really is.</div>
+      <div class="hr"></div>
+      <div class="mini-list" id="modelAudit">
+        <div class="mini-item"><b>Audit pending</b><span class="tiny">Model checks run after market data loads.</span></div>
+      </div>
     </section>
 
-    <section class="card span5">
+    <section class="card span5 priority-model">
       <div class="section-title"><h2>Macro pressure board</h2><span class="tiny" id="macroUpdated">Snapshot + optional API</span></div>
       <div class="macro-grid">
         <div class="macro"><small>US 10Y yield</small><strong id="macro10y">4.78%</strong><small>Higher = BTC headwind</small></div>
@@ -223,7 +279,32 @@
         <div class="field"><label>Fed hike odds % (manual)</label><input id="fedOdds" type="number" value="64" min="0" max="100"></div>
       </div>
       <div class="btnrow" style="margin-top:9px"><button class="btn" id="macroRefresh">Refresh macro API</button><button class="btn" id="macroApply">Apply manual macro</button></div>
-      <div class="note">Alpha Vantage can refresh daily 10-year Treasury yield and Brent data. Fed meeting probabilities are kept manual because they are market-implied and not supplied by Alpha Vantage's economic-series API.</div>
+      <div class="hr"></div>
+      <div class="tiny">BTC cross-asset daily correlation</div>
+      <div id="assetCorrTable"></div>
+      <div class="note">Alpha Vantage can refresh daily 10-year Treasury yield, Brent, and GLD as a gold proxy. Fed meeting probabilities are kept manual because they are market-implied and not supplied by Alpha Vantage's economic-series API.</div>
+    </section>
+
+    <section class="card span12 priority-model">
+      <div class="section-title"><h2>Backlog calibration lab</h2><span class="tiny" id="backtestUpdated">Not run yet</span></div>
+      <div class="lab-grid">
+        <div class="scorebox"><div class="tiny">1H replay accuracy</div><div class="big" id="backtestAcc">--</div></div>
+        <div class="scorebox"><div class="tiny">Qualified samples</div><div class="big" id="backtestSignals">--</div></div>
+        <div class="scorebox"><div class="tiny">Avg 4H paper return</div><div class="big" id="backtestReturn">--</div></div>
+        <div class="scorebox"><div class="tiny">Live probability gate</div><div class="big" id="backtestThreshold">54 / 46</div></div>
+      </div>
+      <div class="hr"></div>
+      <div class="btnrow"><button class="btn primary" id="runBacktest">Run backlog replay</button><span class="tiny">Uses recent 1h BTC candles, holds out the newest 30%, and adapts only the probability gate.</span></div>
+      <div class="mini-list" id="backtestInsights" style="margin-top:10px">
+        <div class="mini-item"><b>Waiting for replay</b><span class="tiny">Run the backlog lab after market data loads. A stronger sample tightens or relaxes the live model gate by a small amount; the mandatory retest rule stays unchanged.</span></div>
+      </div>
+    </section>
+
+    <section class="card span12 priority-decision-log">
+      <div class="section-title"><h2>Directional decision log</h2><span class="tiny" id="decisionStats">No directional calls yet</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Time</th><th>Call</th><th>BTC</th><th>Entry zone</th><th>Stop</th><th>TP1</th><th>TP2</th><th>Readiness</th><th>Now</th><th>Consistency</th></tr></thead><tbody id="decisionLogBody"></tbody></table></div>
+      <div class="btnrow" style="margin-top:10px"><button class="btn" id="exportDecisionLog">Export decisions</button><button class="btn red" id="clearDecisionLog">Clear decision log</button></div>
+      <div class="note">This log records each new LONG/SHORT dashboard call once per signal candle, then marks how that call looks against the latest BTC price.</div>
     </section>
 
     <section class="card span12">
@@ -290,14 +371,26 @@
   const pct = (n,d=2) => Number.isFinite(+n) ? `${(+n).toFixed(d)}%` : '--';
   const clamp = (x,a,b) => Math.max(a,Math.min(b,x));
   const DEFAULT_ALPHA_VANTAGE_KEY = '';
+  const DEFAULT_ALERT_EMAIL = '';
+  const BINANCE_VISIBLE_SNAPSHOT = null;
+  function loadEmailAlerts(){
+    const defaults={enabled:false,to:DEFAULT_ALERT_EMAIL,endpoint:'/api/send-alert',token:'',cooldownMin:30,lastKey:null,lastAt:0,lastStatus:'Not armed'};
+    try{return {...defaults,...JSON.parse(localStorage.getItem('btcEmailAlerts')||'{}')};}catch(e){localStorage.removeItem('btcEmailAlerts');return defaults;}
+  }
   const state = {
     tf:'5m', price:null, ticker:null, funding:null, oi:null, oiChange:null,
     candles:{'5m':[], '15m':[], '1h':[]}, indicators:{}, setup:null,
     chart:null, candleSeries:null, ema9Series:null, ema21Series:null, priceLines:[], ws:null,
-    macro:{yield10:4.78,brent:95.20,fedOdds:64,score:-0.65}, model:null,
+    macro:{yield10:4.78,brent:95.20,fedOdds:64,score:-0.65,assets:{gold:null,oil:null}}, model:null,
+    calibration:{longProb:.54,shortProb:.46,source:'default'}, backtest:null,
     journal:JSON.parse(localStorage.getItem('btcRebuildJournal')||'[]'),
+    decisionLog:JSON.parse(localStorage.getItem('btcDecisionLog')||'[]'),
+    activeContract:JSON.parse(localStorage.getItem('btcActiveContract')||'null'),
+    binanceSnapshot:JSON.parse(localStorage.getItem('btcBinanceSnapshot')||'null')||BINANCE_VISIBLE_SNAPSHOT,
+    emailAlerts:loadEmailAlerts(),
     notifiedSignal:null, manualMode:false, lockout:null
   };
+  if(BINANCE_VISIBLE_SNAPSHOT&&!localStorage.getItem('btcBinanceSnapshot'))localStorage.setItem('btcBinanceSnapshot',JSON.stringify(BINANCE_VISIBLE_SNAPSHOT));
 
   function clock(){ $('clock').textContent = new Date().toLocaleString([], {month:'short',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}); }
   setInterval(clock,1000); clock();
@@ -305,16 +398,21 @@
   async function fetchJSON(url){
     const r=await fetch(url,{cache:'no-store'}); if(!r.ok) throw new Error(`${r.status} ${r.statusText}`); return r.json();
   }
+  const sleep = ms => new Promise(r=>setTimeout(r,ms));
   async function fetchKlines(tf,limit=1000){
-    const bases=['https://api.binance.com','https://data-api.binance.vision']; let err;
-    for(const b of bases){ try{ const j=await fetchJSON(`${b}/api/v3/klines?symbol=BTCUSDT&interval=${tf}&limit=${limit}`); return j.map(x=>({time:Math.floor(x[0]/1000),open:+x[1],high:+x[2],low:+x[3],close:+x[4],volume:+x[5]})); }catch(e){err=e;} }
+    const urls=[
+      `https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=${tf}&limit=${limit}`,
+      `https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${tf}&limit=${limit}`,
+      `https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=${tf}&limit=${limit}`
+    ]; let err;
+    for(const url of urls){ try{ const j=await fetchJSON(url); return j.map(x=>({time:Math.floor(x[0]/1000),open:+x[1],high:+x[2],low:+x[3],close:+x[4],volume:+x[5]})); }catch(e){err=e;} }
     throw err;
   }
   async function refreshMarket(){
     try{
       const [k5,k15,k1h,tick,prem,oi] = await Promise.all([
         fetchKlines('5m'), fetchKlines('15m',500), fetchKlines('1h',500),
-        fetchJSON('https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT').catch(()=>fetchJSON('https://data-api.binance.vision/api/v3/ticker/24hr?symbol=BTCUSDT')),
+        fetchJSON('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=BTCUSDT').catch(()=>fetchJSON('https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT')).catch(()=>fetchJSON('https://data-api.binance.vision/api/v3/ticker/24hr?symbol=BTCUSDT')),
         fetchJSON('https://fapi.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT').catch(()=>null),
         fetchJSON('https://fapi.binance.com/fapi/v1/openInterest?symbol=BTCUSDT').catch(()=>null)
       ]);
@@ -328,12 +426,12 @@
   function startWebSocket(){
     if(state.ws){try{state.ws.close()}catch(e){}}
     try{
-      const ws = new WebSocket(`wss://stream.binance.com:9443/ws/btcusdt@kline_${state.tf}`); state.ws=ws;
+      const ws = new WebSocket(`wss://fstream.binance.com/ws/btcusdt@kline_${state.tf}`); state.ws=ws;
       ws.onmessage = ev => {
         const d=JSON.parse(ev.data), k=d.k; const c={time:Math.floor(k.t/1000),open:+k.o,high:+k.h,low:+k.l,close:+k.c,volume:+k.v}; state.price=c.close;
         const arr=state.candles[state.tf]; if(arr.length && arr[arr.length-1].time===c.time) arr[arr.length-1]=c; else arr.push(c);
         if(arr.length>1000) arr.shift();
-        updateHeader(); renderJournal(); renderAccountCapture(); if(state.candleSeries) state.candleSeries.update(c);
+        updateHeader(); renderActiveContract(); renderJournal(); renderAccountCapture(); if(state.candleSeries) state.candleSeries.update(c);
       };
     }catch(e){console.warn('WebSocket unavailable',e)}
   }
@@ -358,6 +456,16 @@
     const close=c.map(x=>x.close), vol=c.map(x=>x.volume), E9=ema(close,9),E21=ema(close,21),E50=ema(close,50),R=rsi(close),A=atr(c),M=macd(close),V=zscore(vol);
     return {close,E9,E21,E50,R,A,M,V};
   }
+  function tfSeconds(c){
+    if(c.length<2)return 900;
+    const gap=c[c.length-1].time-c[c.length-2].time;
+    return Number.isFinite(gap)&&gap>0?gap:900;
+  }
+  function lastClosedIndex(c){
+    if(!c.length)return -1;
+    const i=c.length-1, sec=tfSeconds(c), now=Date.now()/1000;
+    return now<c[i].time+sec?Math.max(0,i-1):i;
+  }
   function pivots(c,wing=3,lookback=150){
     const s=[],r=[],start=Math.max(wing,c.length-lookback);
     for(let i=start;i<c.length-wing;i++){
@@ -369,7 +477,7 @@
     return {support:sup,resistance:res};
   }
   function directionFromTF(c){
-    const I=calcIndicators(c),i=c.length-1,close=c[i].close; let score=0;
+    const I=calcIndicators(c),i=lastClosedIndex(c),close=c[i].close; let score=0;
     if(I.E9[i]>I.E21[i])score++;else score--; if(I.E21[i]>I.E50[i])score++;else score--;
     if(I.R[i]>53)score++; else if(I.R[i]<47)score--;
     if(I.M.hist[i]>0)score++;else score--;
@@ -403,18 +511,87 @@
     return {b,means,std,accuracy:correct/te.length,brier:brier/te.length,n:rows.length,predict:f=>{const x=f.map((v,j)=>(v-means[j])/std[j]);return sigmoid(b[0]+x.reduce((s,v,j)=>s+b[j+1]*v,0));}};
   }
   function corr(x,y){const n=Math.min(x.length,y.length);if(n<3)return 0;const mx=x.reduce((a,b)=>a+b,0)/n,my=y.reduce((a,b)=>a+b,0)/n;let num=0,dx=0,dy=0;for(let i=0;i<n;i++){const a=x[i]-mx,b=y[i]-my;num+=a*b;dx+=a*a;dy+=b*b;}return dx&&dy?num/Math.sqrt(dx*dy):0;}
-  function modelAnalysis(c){
-    const {rows,I}=featureRows(c,48);const model=trainLogistic(rows);if(!model)return null;const i=c.length-1,a=I.A[i]||1,px=c[i].close,atrPct=a/px;
+  function modelAnalysis(c,horizon=48){
+    const {rows,I}=featureRows(c,horizon);const model=trainLogistic(rows);if(!model)return null;const i=lastClosedIndex(c),a=I.A[i]||1,px=c[i].close,atrPct=a/px;
     const f=[((I.R[i]??50)-50)/20,((I.E9[i]??px)-(I.E21[i]??px))/a,(I.M.hist[i]??0)/a,(px/c[Math.max(0,i-12)].close-1)/Math.max(atrPct,.0001),(I.V[i]??0)/2,(px-(I.E50[i]??px))/a];
     const names=['RSI regime','EMA 9/21 spread','MACD histogram','1h momentum','Volume z-score','Distance vs EMA50']; const correlations=names.map((name,j)=>({name,value:corr(rows.map(r=>r.f[j]),rows.map(r=>r.ret))}));
     return {p:model.predict(f),accuracy:model.accuracy,n:model.n,correlations,features:f,model};
+  }
+  function returnsByDate(series){
+    const dates=Object.keys(series).sort(), out={};
+    for(let i=1;i<dates.length;i++){const a=series[dates[i-1]],b=series[dates[i]];if(a&&b)out[dates[i]]=b/a-1;}
+    return out;
+  }
+  function corrFromMaps(a,b,limit=90){
+    const keys=Object.keys(a).filter(k=>b[k]!=null).sort().slice(-limit);
+    if(keys.length<20)return {n:keys.length,same:0,latestAssetRet:null,latestBtcRet:null};
+    return {n:keys.length,same:corr(keys.map(k=>a[k]),keys.map(k=>b[k])),latestBtcRet:a[keys[keys.length-1]],latestAssetRet:b[keys[keys.length-1]]};
+  }
+  function leadCorrFromMaps(btcRet,assetRet,limit=90){
+    const keys=Object.keys(btcRet).sort(), xs=[],ys=[];
+    for(let i=1;i<keys.length;i++){const today=keys[i],prev=keys[i-1];if(assetRet[prev]!=null){xs.push(btcRet[today]);ys.push(assetRet[prev]);}}
+    return xs.length<20?0:corr(xs.slice(-limit),ys.slice(-limit));
+  }
+  function assetStatus(name,stats){
+    if(!stats||stats.n<45)return {name,active:false,reason:'Waiting for at least 45 matched daily observations.'};
+    const same=Math.abs(stats.same),lead=Math.abs(stats.lead1);
+    if(lead>=.20)return {name,active:true,mode:'lead',reason:'1-day lead correlation is large enough to use lightly.'};
+    if(same>=.35)return {name,active:true,mode:'regime',reason:'Same-day correlation is meaningful, but lead is weak; use only as a small regime overlay.'};
+    return {name,active:false,mode:'off',reason:'Correlation is too weak/noisy for model use.'};
+  }
+  function macroAssetScore(){
+    const assets=[state.macro.assets.gold,state.macro.assets.oil].filter(Boolean); let s=0;
+    for(const a of assets){
+      const status=assetStatus(a.name,a); if(!status.active||!Number.isFinite(a.latestAssetRet))continue;
+      const c=status.mode==='lead'?a.lead1:a.same, scale=status.mode==='lead'?16:7;
+      s += clamp(Math.sign(c)*a.latestAssetRet*scale,-.18,.18);
+    }
+    return clamp(s,-.25,.25);
+  }
+  function buildSeriesFromAlphaDaily(d){
+    const ts=d['Time Series (Daily)']||{}, out={};
+    Object.keys(ts).forEach(k=>{const v=+(ts[k]['4. close']||ts[k]['5. adjusted close']);if(Number.isFinite(v))out[k]=v;});
+    return out;
+  }
+  function buildSeriesFromCommodity(d){
+    const out={}; (d.data||[]).forEach(x=>{const v=+x.value;if(x.date&&Number.isFinite(v))out[x.date]=v;}); return out;
+  }
+  async function fetchDailyBTC(limit=180){
+    const bases=['https://api.binance.com','https://data-api.binance.vision']; let err;
+    for(const b of bases){try{const j=await fetchJSON(`${b}/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=${limit}`);const out={};j.forEach(x=>out[new Date(x[0]).toISOString().slice(0,10)]=+x[4]);return out;}catch(e){err=e;}}
+    throw err;
+  }
+  function updateAssetCorrelations(btc,goldRaw,oilRaw){
+    const btcRet=returnsByDate(btc), goldRet=returnsByDate(buildSeriesFromAlphaDaily(goldRaw)), oilRet=returnsByDate(buildSeriesFromCommodity(oilRaw));
+    const gold={name:'Gold proxy',...corrFromMaps(btcRet,goldRet,90)}; gold.lead1=leadCorrFromMaps(btcRet,goldRet,90);
+    const oil={name:'Brent oil',...corrFromMaps(btcRet,oilRet,90)}; oil.lead1=leadCorrFromMaps(btcRet,oilRet,90);
+    state.macro.assets={gold,oil};
+  }
+  async function refreshAssetCorrelations(key){
+    const btc=await fetchDailyBTC(180); await sleep(1200);
+    const goldRaw=await fetchJSON(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GLD&outputsize=compact&apikey=${encodeURIComponent(key)}`); await sleep(1200);
+    const oilRaw=await fetchJSON(`https://www.alphavantage.co/query?function=BRENT&interval=daily&apikey=${encodeURIComponent(key)}`);
+    updateAssetCorrelations(btc,goldRaw,oilRaw);
+  }
+  function holdoutReplay(rows){
+    if(rows.length<220)return null;
+    const split=Math.floor(rows.length*.70), train=rows.slice(0,split), test=rows.slice(split), model=trainLogistic(train);
+    if(!model||test.length<40)return null;
+    const preds=test.map(r=>({p:model.predict(r.f),y:r.y,ret:r.ret}));
+    const acc=preds.filter(x=>(x.p>=.5)==!!x.y).length/preds.length, brier=preds.reduce((s,x)=>s+(x.p-x.y)**2,0)/preds.length;
+    const selected=preds.filter(x=>x.p>=.58||x.p<=.42), paper=selected.map(x=>x.p>=.58?x.ret:-x.ret);
+    const selectedAcc=selected.length?selected.filter(x=>(x.p>=.5)==!!x.y).length/selected.length:null;
+    const avgRet=paper.length?paper.reduce((a,b)=>a+b,0)/paper.length:null;
+    const tighten=selected.length>=20&&(selectedAcc??0)<.52, relax=selected.length>=20&&(selectedAcc??0)>.57&&avgRet>0;
+    state.calibration=tighten?{longProb:.56,shortProb:.44,source:'tightened'}:relax?{longProb:.535,shortProb:.465,source:'relaxed'}:{longProb:.54,shortProb:.46,source:'neutral'};
+    return {rows:rows.length,test:test.length,acc,brier,selected:selected.length,selectedAcc,avgRet,longs:selected.filter(x=>x.p>=.58).length,shorts:selected.filter(x=>x.p<=.42).length,calibration:state.calibration};
   }
 
   function analyze(){
     const c15=state.candles['15m'],c1=state.candles['1h'],c5=state.candles['5m']; if(c15.length<100||c1.length<100||c5.length<150)return;
     state.manualMode=false;
-    const d15=directionFromTF(c15), d1=directionFromTF(c1), I=d15.I, i=c15.length-1, atrNow=I.A[i]||state.price*.004;
-    const structuralBase=c15.length>12?c15.slice(0,-4):c15; const sr=pivots(structuralBase,3,140); const px=state.price||c15[i].close;
+    const d15=directionFromTF(c15), d1=directionFromTF(c1), I=d15.I, i=lastClosedIndex(c15), atrNow=I.A[i]||state.price*.004;
+    const structuralBase=c15.length>12?c15.slice(0,Math.max(12,i-3)):c15; const sr=pivots(structuralBase,3,140); const px=state.price||c15[i].close;
     const res=sr.resistance, sup=sr.support;
     const longTrigger=res+atrNow*.12, shortTrigger=sup-atrNow*.12;
     const longEntryLow=longTrigger,longEntryHigh=longTrigger+atrNow*.35,shortEntryHigh=shortTrigger,shortEntryLow=shortTrigger-atrNow*.35;
@@ -422,7 +599,7 @@
     const longRisk=((longEntryLow+longEntryHigh)/2)-longStop, shortRisk=shortStop-((shortEntryLow+shortEntryHigh)/2);
     const longMid=(longEntryLow+longEntryHigh)/2,shortMid=(shortEntryLow+shortEntryHigh)/2;
     const longTp1=longMid+longRisk*1.35,longTp2=longMid+longRisk*2.25,shortTp1=shortMid-shortRisk*1.35,shortTp2=shortMid-shortRisk*2.25;
-    const recent=c15.slice(-8); const brokeLong=px>longTrigger, brokeShort=px<shortTrigger;
+    const recent=c15.slice(Math.max(0,i-7),i+1); const brokeLong=px>longTrigger, brokeShort=px<shortTrigger;
     const longRetest=brokeLong && recent.some(x=>x.low<=res+atrNow*.25 && x.close>res); const shortRetest=brokeShort && recent.some(x=>x.high>=sup-atrNow*.25 && x.close<sup);
     const momentumLong=d15.score>=2&&d1.score>=1, momentumShort=d15.score<=-2&&d1.score<=-1;
     const volz=I.V[i]??0, volumeConfirm=volz>0.15;
@@ -439,12 +616,13 @@
     const nearMid=px>sup+atrNow*.8&&px<res-atrNow*.8;
     let signal='WAIT',reason='Price is between confirmation zones.';
     const lock=dailyLockout();
-    if(longCount>=4 && brokeLong && longRetest && !impulse && !nearMid && pHigher>=.54){signal='LONG';reason=`${longCount}/6 bullish gates align after reclaim/retest. Model leans ${Math.round(pHigher*100)}% higher.`;}
-    else if(shortCount>=4 && brokeShort && shortRetest && !impulse && !nearMid && pHigher<=.46){signal='SHORT';reason=`${shortCount}/6 bearish gates align after breakdown/failed reclaim. Model leans ${Math.round((1-pHigher)*100)}% lower.`;}
+    const longProbGate=state.calibration.longProb||.54, shortProbGate=state.calibration.shortProb||.46;
+    if(longCount>=4 && brokeLong && longRetest && !impulse && !nearMid && pHigher>=longProbGate){signal='LONG';reason=`${longCount}/6 bullish gates align after reclaim/retest. Model leans ${Math.round(pHigher*100)}% higher.`;}
+    else if(shortCount>=4 && brokeShort && shortRetest && !impulse && !nearMid && pHigher<=shortProbGate){signal='SHORT';reason=`${shortCount}/6 bearish gates align after breakdown/failed reclaim. Model leans ${Math.round((1-pHigher)*100)}% lower.`;}
     else if(impulse){reason='Extended impulse candle. Do not chase. Wait for a retest.';}
     else if(Math.max(longCount,shortCount)>=4){reason='Several factors align, but the price/retest structure is not clean enough yet.';}
     if(lock.locked){signal='LOCKOUT';reason=lock.reason;}
-    state.setup={px,atr:atrNow,support:sup,resistance:res,long:{trigger:longTrigger,entryLow:longEntryLow,entryHigh:longEntryHigh,stop:longStop,tp1:longTp1,tp2:longTp2,rr:(longTp2-longMid)/longRisk,gates:gatesLong,count:longCount,retest:longRetest},short:{trigger:shortTrigger,entryLow:shortEntryLow,entryHigh:shortEntryHigh,stop:shortStop,tp1:shortTp1,tp2:shortTp2,rr:(shortMid-shortTp2)/shortRisk,gates:gatesShort,count:shortCount,retest:shortRetest},signal,reason,pHigher,impulse,d15,d1,volz};
+    state.setup={px,atr:atrNow,support:sup,resistance:res,signalCandleTime:c15[i].time,long:{trigger:longTrigger,entryLow:longEntryLow,entryHigh:longEntryHigh,stop:longStop,tp1:longTp1,tp2:longTp2,rr:(longTp2-longMid)/longRisk,gates:gatesLong,count:longCount,retest:longRetest},short:{trigger:shortTrigger,entryLow:shortEntryLow,entryHigh:shortEntryHigh,stop:shortStop,tp1:shortTp1,tp2:shortTp2,rr:(shortMid-shortTp2)/shortRisk,gates:gatesShort,count:shortCount,retest:shortRetest},signal,reason,pHigher,impulse,d15,d1,volz};
     state.lockout=lock;
     maybeNotify(signal,reason);
   }
@@ -488,14 +666,112 @@
   }
   function macroScore(){
     const y=state.macro.yield10,b=state.macro.brent,f=state.macro.fedOdds; let s=0;
-    s += y>=4.8?-0.65:y>=4.5?-0.35:y<=4?0.15:0; s += b>=95?-0.55:b>=85?-0.30:b<70?.15:0; s += f>=65?-0.55:f>=50?-0.3:f<30?.15:0; return clamp(s/1.5,-1,1);
+    s += y>=4.8?-0.65:y>=4.5?-0.35:y<=4?0.15:0; s += b>=95?-0.55:b>=85?-0.30:b<70?.15:0; s += f>=65?-0.55:f>=50?-0.3:f<30?.15:0; return clamp(s/1.5+macroAssetScore(),-1,1);
+  }
+  function gateLabels(side){
+    return side==='LONG'?['resistance reclaim','retest/higher low','15m+1h momentum','volume','derivatives','macro']:['support break','failed reclaim/lower high','15m+1h momentum','volume','derivatives','macro'];
+  }
+  function entryReadiness(side){
+    const s=state.setup;if(!s)return {pct:0,text:'Waiting for market data.'};
+    const key=side.toLowerCase(), q=s[key], px=state.price||s.px, entryLow=Math.min(q.entryLow,q.entryHigh), entryHigh=Math.max(q.entryLow,q.entryHigh);
+    const priceFit=px>=entryLow&&px<=entryHigh?1:clamp(1-Math.min(Math.abs(px-entryLow),Math.abs(px-entryHigh))/(s.atr*2.4),0,1);
+    let pct=clamp(q.count/6*68+priceFit*22+(q.retest?10:0),0,98);
+    if(s.signal===side)pct=100; else if(!q.retest)pct=Math.min(pct,78);
+    if(s.impulse||state.lockout?.locked)pct=Math.min(pct,state.lockout?.locked?8:70);
+    const labels=gateLabels(side), missing=q.gates.map((v,i)=>v?null:labels[i]).filter(Boolean).slice(0,2);
+    let text=pct>=100?`Ideal ${side} entry conditions are live now.`:missing.length?`Needs ${missing.join(' + ')}.`:`Close, but wait for exact entry-zone behavior.`;
+    if(px>entryHigh&&side==='LONG')text='Price is above preferred LONG entry; wait for a cleaner retest.';
+    if(px<entryLow&&side==='SHORT')text='Price is below preferred SHORT entry; wait for a cleaner retest.';
+    return {pct:Math.round(pct),text};
+  }
+  function renderEntryReadiness(){
+    const L=entryReadiness('LONG'), S=entryReadiness('SHORT');
+    $('longReadyPct').textContent=`${L.pct}%`;$('longReadyFill').style.width=`${L.pct}%`;$('longReadyText').textContent=L.text;
+    $('shortReadyPct').textContent=`${S.pct}%`;$('shortReadyFill').style.width=`${S.pct}%`;$('shortReadyText').textContent=S.text;
+  }
+  function confidenceSummary(){
+    const s=state.setup;if(!s)return {bias:'WAIT',pct:0,gates:'--',structure:'--',risk:'--',cls:'amber',text:'Waiting for live analysis.'};
+    const longReady=entryReadiness('LONG'), shortReady=entryReadiness('SHORT');
+    const side=s.signal==='LONG'||s.signal==='SHORT'?s.signal:(longReady.pct>=shortReady.pct?'LONG':'SHORT');
+    const sideData=s[side.toLowerCase()], prob=side==='LONG'?s.pHigher:1-s.pHigher, ready=side==='LONG'?longReady:shortReady;
+    const pct=s.signal==='LONG'||s.signal==='SHORT'?Math.round(prob*100):Math.round(Math.max(ready.pct, prob*100*.8));
+    const locked=state.lockout?.locked, cls=locked||s.signal==='LOCKOUT'?'red':s.signal==='LONG'?'green':s.signal==='SHORT'?'red':'amber';
+    const structure=sideData.retest?'Confirmed':'Missing retest';
+    const risk=locked?'LOCKOUT':'Allowed';
+    const text=s.signal==='LONG'||s.signal==='SHORT'?`Actionable ${side} call: ${sideData.count}/6 gates, ${structure.toLowerCase()}, model confidence ${Math.round(prob*100)}%.`:`Closest side is ${side}, but ${ready.text.toLowerCase()}`;
+    return {bias:s.signal==='LOCKOUT'?'LOCKOUT':side,pct:clamp(pct,0,100),gates:`${sideData.count}/6`,structure,risk,cls,text};
+  }
+  function renderConfidence(){
+    if(!$('confidenceBias'))return;
+    const c=confidenceSummary();
+    $('confidenceStatus').textContent=c.bias==='LOCKOUT'?'Blocked':c.bias==='WAIT'?'Waiting':c.pct>=85?'High':c.pct>=65?'Developing':'Low';
+    $('confidenceBias').textContent=c.bias;$('confidenceBias').className=c.cls;
+    $('confidencePct').textContent=`${c.pct}%`;$('confidencePct').className=c.cls;
+    $('confidenceGates').textContent=c.gates;$('confidenceStructure').textContent=c.structure;$('confidenceStructure').className=c.structure==='Confirmed'?'green':'amber';
+    $('confidenceRisk').textContent=c.risk;$('confidenceRisk').className=c.risk==='Allowed'?'green':'red';
+    $('confidenceMeterPct').textContent=`${c.pct}%`;$('confidenceFill').style.width=`${c.pct}%`;$('confidenceFill').className=`meter-fill ${c.cls==='green'?'long':c.cls==='red'?'short':''}`;
+    $('confidenceText').textContent=c.text;
+  }
+  function exitPressure(t,pr,act){
+    if(!t||!pr)return {pct:0,text:'No active contract pressure.'};
+    let pct=50,text='Still between entry and the stop/target zone.';
+    if(pr.stopHit)return {pct:100,text:'Stop/invalidation is hit. The plan says end the contract now.'};
+    if(pr.tp2Hit)return {pct:100,text:'TP2 is hit. This is a full review / close-runner condition.'};
+    if(t.tp1Done&&(pr.emaInvalid||pr.oppositeInvalid))return {pct:92,text:'Runner invalidation is active. Protect the remaining position.'};
+    if(pr.tp1Hit&&!t.tp1Done)return {pct:72,text:'TP1 is hit. Reduce risk or take the planned partial.'};
+    if(pr.moveR<0){pct=clamp(50+Math.abs(pr.moveR)*45,50,96);text='Trade is moving toward invalidation; stop discipline is becoming more important.';}
+    else if(pr.moveR>=1){pct=60;text='The position has profit cushion; protect it while waiting for the next target.';}
+    else {pct=clamp(50-pr.moveR*18,32,50);text='The trade is still developing; metrics have not reached an exit trigger.';}
+    if(act?.cls==='red')pct=Math.max(pct,88);
+    return {pct:Math.round(pct),text};
+  }
+  function persistDecisionLog(){localStorage.setItem('btcDecisionLog',JSON.stringify(state.decisionLog.slice(0,200)));}
+  function logDirectionalDecision(signal,reason){
+    if(signal!=='LONG'&&signal!=='SHORT'||!state.setup)return;
+    const p=currentPlan(signal.toLowerCase()); if(!p)return;
+    const s=state.setup, sideData=s[signal.toLowerCase()], readiness=entryReadiness(signal);
+    const key=[signal,s.signalCandleTime,Math.round(p.entry),Math.round(p.stop),Math.round(p.tp2)].join(':');
+    if(state.decisionLog.some(d=>d.key===key))return;
+    state.decisionLog.unshift({key,time:new Date().toISOString(),signal,price:state.price||s.px,entryLow:p.entryLow,entryHigh:p.entryHigh,entry:p.entry,stop:p.stop,tp1:p.tp1,tp2:p.tp2,lev:p.lev,margin:p.margin,notional:p.notional,plannedLoss:p.plannedLoss,probability:signal==='LONG'?s.pHigher:1-s.pHigher,gates:sideData.count,readiness:readiness.pct,reason});
+    state.decisionLog=state.decisionLog.slice(0,200);persistDecisionLog();renderDecisionLog();
+  }
+  function decisionOutcome(d){
+    const px=state.price;if(!px)return {label:'--',cls:'',move:null};
+    const dir=d.signal==='LONG'?1:-1, risk=Math.max(.01,Math.abs(d.entry-d.stop)), move=(px-d.entry)*dir/risk;
+    const stopHit=d.signal==='LONG'?px<=d.stop:px>=d.stop, tp1Hit=d.signal==='LONG'?px>=d.tp1:px<=d.tp1, tp2Hit=d.signal==='LONG'?px>=d.tp2:px<=d.tp2;
+    if(stopHit)return {label:'Stop hit',cls:'red',move};
+    if(tp2Hit)return {label:'TP2 hit',cls:'green',move};
+    if(tp1Hit)return {label:'TP1 hit',cls:'green',move};
+    return {label:'Live',cls:move>=0?'green':'red',move};
+  }
+  function renderDecisionLog(){
+    const body=$('decisionLogBody');if(!body)return;
+    const rows=state.decisionLog||[];
+    body.innerHTML=rows.length?rows.map(d=>{const o=decisionOutcome(d);return `<tr><td>${new Date(d.time).toLocaleString()}</td><td class="${d.signal==='LONG'?'green':'red'}">${d.signal}</td><td>$${fmt(d.price,1)}</td><td>$${fmt(d.entryLow,1)} - $${fmt(d.entryHigh,1)}</td><td>$${fmt(d.stop,1)}</td><td>$${fmt(d.tp1,1)}</td><td>$${fmt(d.tp2,1)}</td><td>${d.readiness||'--'}%</td><td class="${o.cls}">${o.move==null?'--':`${o.move>=0?'+':''}${o.move.toFixed(2)}R`}</td><td class="${o.cls}">${o.label}</td></tr>`}).join(''):'<tr><td colspan="10" class="muted">No LONG/SHORT dashboard decisions recorded yet.</td></tr>';
+    const closedLike=rows.map(decisionOutcome).filter(o=>o.label==='TP2 hit'||o.label==='TP1 hit'||o.label==='Stop hit');
+    const wins=closedLike.filter(o=>o.label==='TP2 hit'||o.label==='TP1 hit').length;
+    $('decisionStats').textContent=rows.length?`${rows.length} calls • ${closedLike.length?Math.round(wins/closedLike.length*100)+'% hit target before current mark':'tracking live outcomes'}`:'No directional calls yet';
+  }
+  function exportDecisionLog(){
+    const rows=[['time','signal','price','entry_low','entry_high','entry_mid','stop','tp1','tp2','leverage','margin','notional','planned_loss','probability','gates','readiness','reason'],...state.decisionLog.map(d=>[d.time,d.signal,d.price,d.entryLow,d.entryHigh,d.entry,d.stop,d.tp1,d.tp2,d.lev,d.margin,d.notional,d.plannedLoss,d.probability,d.gates,d.readiness,String(d.reason||'').replaceAll(',',' ')])];
+    const blob=new Blob([rows.map(r=>r.join(',')).join('\n')],{type:'text/csv'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='btc_directional_decisions.csv';a.click();URL.revokeObjectURL(u);
+  }
+  function renderModelAudit(){
+    if(!$('modelAudit'))return;
+    const s=state.setup,m=state.model, notes=[];
+    notes.push({title:'Instrument alignment',cls:'green',text:'Core candles now prefer USD-M Futures data, with spot data only as fallback.'});
+    notes.push({title:'Closed-candle discipline',cls:'green',text:'Signals use the latest closed analysis candle while live price handles current mark and active exits.'});
+    notes.push({title:'Retest rule',cls:s&&(s.long.retest||s.short.retest)?'green':'amber',text:'Retest/structure remains mandatory; no direction can pass on momentum alone.'});
+    notes.push({title:'Volume gate',cls:s&&s.volz>.15?'green':'amber',text:`Current volume z-score is ${s?fmt(s.volz,2):'--'}; weak volume blocks lower-quality entries.`});
+    notes.push({title:'Model confidence',cls:m&&m.accuracy>=.52?'green':'amber',text:m?`Rolling holdout accuracy ${pct(m.accuracy*100,1)} across ${fmt(m.n,0)} observations; probabilities remain capped.`:'Waiting for enough 5m observations.'});
+    $('modelAudit').innerHTML=notes.map(n=>`<div class="mini-item"><b>${n.title} <span class="${n.cls}">${n.cls==='green'?'OK':'WATCH'}</span></b><span class="tiny">${n.text}</span></div>`).join('');
   }
 
   function updateHeader(){
     const px=state.price; $('price').textContent=px?`$${fmt(px,1)}`:'--'; if(state.ticker){const ch=+state.ticker.priceChangePercent;$('chg24').textContent=`${ch>=0?'+':''}${ch.toFixed(2)}%`;$('chg24').className=`change ${ch>=0?'green':'red'}`;$('high24').textContent=`$${fmt(+state.ticker.highPrice,0)}`;$('low24').textContent=`$${fmt(+state.ticker.lowPrice,0)}`;}
     $('funding').textContent=state.funding!=null?pct(state.funding*100,4):'n/a'; $('oi').textContent=state.oi?`${fmt(state.oi,0)} BTC`:'n/a';
   }
-  function renderAll(){updateHeader();renderSetup();renderGate();renderSizing();renderModel();renderMacro();renderJournal();renderRecovery();renderAccountCapture();}
+  function renderAll(){updateHeader();renderSetup();renderGate();renderSizing();renderActiveContract();renderModel();renderMacro();renderBacktest();renderJournal();renderRecovery();renderAccountCapture();renderEmailAlerts();renderDecisionLog();renderModelAudit();renderConfidence();}
   function renderSetup(){
     const s=state.setup;if(!s)return; $('signal').textContent=s.signal;$('signal').className=`signal ${s.signal==='LONG'?'green':s.signal==='SHORT'||s.signal==='LOCKOUT'?'red':'amber'}`;$('signalReason').textContent=s.reason;$('pUp').textContent=`${Math.round(s.pHigher*100)}%`;$('pDown').textContent=`${Math.round((1-s.pHigher)*100)}%`;$('probFill').style.width=`${Math.round(s.pHigher*100)}%`;
     $('masterCall').className=`callout ${s.signal==='LONG'?'good':s.signal==='SHORT'?'bad':s.signal==='LOCKOUT'?'lock':'wait'}`;
@@ -503,6 +779,7 @@
     $('shortSupport').textContent=`$${fmt(s.support,0)}`;$('shortTrigger').textContent=`<$${fmt(S.trigger,0)}`;$('shortEntry').textContent=`$${fmt(S.entryLow,0)} - $${fmt(S.entryHigh,0)}`;$('shortStop').textContent=`$${fmt(S.stop,0)}`;$('shortTp1').textContent=`$${fmt(S.tp1,0)}`;$('shortTp2').textContent=`$${fmt(S.tp2,0)}`;$('shortRR').textContent=`${S.rr.toFixed(2)}R`;
     $('longNarrative').textContent=L.retest?'Reclaim/retest detected. Check remaining gates before entry.':'Wait for price to reclaim resistance, retest it from above, then hold a higher low.';
     $('shortNarrative').textContent=S.retest?'Breakdown/failed reclaim detected. Check remaining gates before entry.':'Wait for price to break support, rebound into it, then fail the reclaim.';
+    renderEntryReadiness();
     if(!$('jEntry').value)$('jEntry').value=s.px.toFixed(1);
   }
   function renderGate(){
@@ -511,16 +788,126 @@
     $('gate').innerHTML=labels.map((x,i)=>`<div class="gate-item ${G[i]?'pass':'fail'}"><span class="gate-icon">${G[i]?'✓':'×'}</span><div><b>${x}</b><div class="tiny">${G[i]?'Pass':'Not confirmed'}</div></div></div>`).join(''); $('gateCount').textContent=`${G.filter(Boolean).length}/6 ${side.toUpperCase()}`;
   }
   function chooseLeverage(stopPct,atrPct){ if(atrPct>0.012||stopPct>0.012)return 7; if(atrPct>0.008||stopPct>0.009)return 8; return 10; }
+  function currentPlan(choice='auto'){
+    const s=state.setup;if(!s)return null;let side=choice;
+    if(side==='auto')side=s.signal==='SHORT'?'short':s.signal==='LONG'?'long':(s.pHigher>=.5?'long':'short');
+    const q=s[side];if(!q)return null;
+    const capital=+$('capital').value||1500,riskPct=(+$('riskPct').value||3)/100,marginCap=(+$('marginCap').value||35)/100;
+    const entry=(q.entryLow+q.entryHigh)/2,stop=q.stop,stopPct=Math.abs(entry-stop)/entry,atrPct=s.atr/s.px,lev=chooseLeverage(stopPct,atrPct);
+    const riskBudget=capital*riskPct,maxNotional=capital*marginCap*lev,notional=Math.min(riskBudget/stopPct,maxNotional);
+    const margin=notional/lev,plannedLoss=notional*stopPct,tp1Profit=notional*Math.abs(q.tp1-entry)/entry,tp2Profit=notional*Math.abs(q.tp2-entry)/entry;
+    return {side:side.toUpperCase(),entry,entryLow:q.entryLow,entryHigh:q.entryHigh,stop,tp1:q.tp1,tp2:q.tp2,lev,margin,notional,plannedLoss,tp1Profit,tp2Profit,stopPct,atrPct,rr:q.rr};
+  }
   function renderSizing(){
     const s=state.setup;if(!s)return; const capital=+$('capital').value||1500,riskPct=(+$('riskPct').value||3)/100,marginCap=(+$('marginCap').value||35)/100;let side=$('calcSide').value;if(side==='auto')side=s.signal==='SHORT'?'short':s.signal==='LONG'?'long':(s.pHigher>=.5?'long':'short');const q=s[side],entry=(q.entryLow+q.entryHigh)/2,stop=q.stop,stopPct=Math.abs(entry-stop)/entry,atrPct=s.atr/s.px;let lev=chooseLeverage(stopPct,atrPct),riskBudget=capital*riskPct,notional=riskBudget/stopPct,maxNotional=capital*marginCap*lev;if(notional>maxNotional)notional=maxNotional;let margin=notional/lev,actualLoss=notional*stopPct,profit=notional*Math.abs(q.tp2-entry)/entry;
     $('levOut').textContent=`${lev}x isolated`;$('marginOut').textContent=`${fmt(margin,0)} USDT`;$('notionalOut').textContent=`${fmt(notional,0)} USDT`;$('lossOut').textContent=`-${fmt(actualLoss,1)} USDT`;$('profitOut').textContent=`+${fmt(profit,1)} USDT`;
     const prefix=state.lockout?.locked?'LOCKOUT active: use this as next-session planning only. ':state.manualMode?'Manual map: planning only until retest/gates confirm. ':'';
     $('sizingNote').textContent=`${prefix}${side.toUpperCase()} case: midpoint entry $${fmt(entry,0)}, stop distance ${pct(stopPct*100,2)}. Position is capped by both your ${pct(riskPct*100,2)} loss budget and ${pct(marginCap*100,0)} margin-allocation ceiling.`;
   }
+  function persistActiveContract(){localStorage.setItem('btcActiveContract',JSON.stringify(state.activeContract));}
+  function clearActiveContract(silent=false){
+    if(state.activeContract&&!silent&&!confirm('Clear the active monitor? This does not close anything on Binance.')){$('trackSetup').checked=true;return;}
+    state.activeContract=null;localStorage.removeItem('btcActiveContract');$('trackSetup').checked=false;renderAll();
+  }
+  function trackSuggestedContract(){
+    const s=state.setup;if(!s||!['LONG','SHORT'].includes(s.signal)){$('trackSetup').checked=false;alert('No live LONG or SHORT setup is active to track.');return;}
+    const p=currentPlan(s.signal.toLowerCase());if(!p){$('trackSetup').checked=false;return;}
+    const id=Date.now(), snap=state.model?{modelP:state.model.p,features:state.model.features.slice()}:{}; 
+    state.activeContract={id,journalId:id,started:new Date().toISOString(),side:p.side,entry:p.entry,entryLow:p.entryLow,entryHigh:p.entryHigh,stop:p.stop,tp1:p.tp1,tp2:p.tp2,lev:p.lev,margin:p.margin,notional:p.notional,plannedLoss:p.plannedLoss,tp1Done:false,signalReason:s.reason,...snap};
+    state.journal.unshift({id,time:state.activeContract.started,side:p.side,entry:p.entry,margin:p.margin,lev:p.lev,stop:p.stop,tp:p.tp2,notes:`Tracked active setup. ${s.reason}`,status:'OPEN',...snap});
+    persistActiveContract();persistJournal();renderAll();
+  }
+  function setTp1Done(v){if(!state.activeContract)return;$('activeTp1Done').checked=v;state.activeContract.tp1Done=v;persistActiveContract();renderActiveContract();}
+  function activeProgress(t){
+    const px=state.price||state.setup?.px;if(!px)return null;
+    const dir=t.side==='LONG'?1:-1,risk=Math.max(.01,Math.abs(t.entry-t.stop)),moveR=(px-t.entry)*dir/risk;
+    const stopHit=t.side==='LONG'?px<=t.stop:px>=t.stop,tp1Hit=t.side==='LONG'?px>=t.tp1:px<=t.tp1,tp2Hit=t.side==='LONG'?px>=t.tp2:px<=t.tp2;
+    let emaInvalid=false,oppositeInvalid=false;
+    const c15=state.candles['15m'];if(c15.length>30){const I=calcIndicators(c15),i=lastClosedIndex(c15),e=I.E21[i],close=c15[i].close;if(e)emaInvalid=t.side==='LONG'?close<e:close>e;}
+    if(state.setup)oppositeInvalid=t.side==='LONG'?(state.setup.short.count>=4&&state.setup.short.retest):(state.setup.long.count>=4&&state.setup.long.retest);
+    const live=liveTradePnl(t,px);
+    return {px,moveR,stopHit,tp1Hit,tp2Hit,emaInvalid,oppositeInvalid,pnl:live.pnl,roi:live.roi};
+  }
+  function activeAction(t,pr){
+    if(!pr)return {label:'WAIT',cls:'amber',next:'--',text:'Waiting for live BTC price.'};
+    if(pr.stopHit)return {label:'EXIT NOW',cls:'red',next:'Stop',text:`Stop/invalidation is hit at $${fmt(t.stop,1)}. The plan says close the contract, not widen the stop.`};
+    if(pr.tp2Hit)return {label:'TP2 / EXIT',cls:'green',next:'TP2',text:`TP2 is hit at $${fmt(t.tp2,1)}. Close the planned TP2 portion or close the runner unless you have deliberately switched to trailing.`};
+    if(pr.tp1Hit&&!t.tp1Done)return {label:'TAKE TP1',cls:'green',next:'TP1',text:`TP1 is hit at $${fmt(t.tp1,1)}. Take the planned partial, then tick "TP1 partial taken" and manage the rest as a runner.`};
+    if(t.tp1Done&&(pr.emaInvalid||pr.oppositeInvalid))return {label:'EXIT RUNNER',cls:'red',next:'Runner',text:`Runner exit condition is active: ${pr.emaInvalid?'15m closed through EMA21 against the trade.':'Opposite setup is clearing the gate.'}`};
+    if(pr.moveR>=1&&!t.tp1Done)return {label:'REDUCE RISK',cls:'amber',next:'TP1',text:'Trade is at least +1R. Consider taking 30%-35% or moving risk to your rule-based level before TP1.'};
+    if(t.tp1Done)return {label:'TRAIL',cls:'amber',next:'TP2',text:'TP1 is marked done. Hold only while 15m structure and EMA21 still support the trade; do not let a winner turn into a full loss.'};
+    return {label:'HOLD',cls:'amber',next:pr.moveR>=0?'TP1':'Stop',text:'No exit trigger yet. Respect the original stop and wait for TP1 or invalidation.'};
+  }
+  function binanceSnapshotItem(){
+    const b=state.binanceSnapshot;if(!b)return '';
+    const when=b.checkedAt?new Date(b.checkedAt).toLocaleString():'latest check';
+    const cls=(b.positions||0)>0?'amber':'green';
+    return `<div class="mini-item"><b>Binance visible check <span class="${cls}">${b.positions||0} position(s)</span></b><span class="tiny">${when}: ${b.status||'No position detail imported.'} Open orders: ${b.openOrders??'--'}. Source: ${b.source||'read-only visible page'}.</span></div>`;
+  }
+  function renderActiveContract(){
+    const s=state.setup,t=state.activeContract, suggested=s&&['LONG','SHORT'].includes(s.signal)?currentPlan(s.signal.toLowerCase()):null;
+    $('trackSetup').checked=!!t;$('trackSetup').disabled=!!t||!suggested;$('activeTp1Done').disabled=!t;$('closeActiveNow').disabled=!t;$('clearActive').disabled=!t;
+    if(t){
+      const pr=activeProgress(t), act=activeAction(t,pr), pnl=pr?.pnl, roi=pr?.roi;
+      const pressure=exitPressure(t,pr,act);
+      $('trackHint').textContent=`Tracking ${t.side} from $${fmt(t.entry,1)}. Levels are frozen from the moment you ticked entry.`;
+      $('activeUpdated').textContent=`Tracked since ${new Date(t.started).toLocaleTimeString()}`;$('activeSide').textContent=t.side;$('activeSide').className=`big ${t.side==='LONG'?'green':'red'}`;
+      $('activeLive').textContent=pr?`$${fmt(pr.px,1)}`:'--';$('activePnl').textContent=Number.isFinite(pnl)?`${pnl>=0?'+':''}${fmt(pnl,1)} USDT`:'--';$('activePnl').className=`big ${pnl>=0?'green':'red'}`;
+      $('activeNext').textContent=act.next;$('activeAction').textContent=act.label;$('activeAction').className=`big ${act.cls}`;$('activeTp1Done').checked=!!t.tp1Done;
+      $('exitPressurePct').textContent=`${pressure.pct}%`;$('exitPressureFill').style.width=`${pressure.pct}%`;$('exitPressureText').textContent=pressure.text;
+      const mark=(hit,now,danger)=>`stage ${danger?'danger':hit?'hit':now?'now':''}`;
+      $('activeStages').innerHTML=[
+        `<div class="${mark(true,false,false)}"><div class="tiny">Entry zone</div><b>$${fmt(t.entryLow,0)} - $${fmt(t.entryHigh,0)}</b><div class="tiny">Tracked fill $${fmt(t.entry,1)}</div></div>`,
+        `<div class="${mark(false,false,pr?.stopHit)}"><div class="tiny">Stop / back out</div><b>$${fmt(t.stop,1)}</b><div class="tiny">Max planned loss ${fmt(t.plannedLoss,1)} USDT</div></div>`,
+        `<div class="${mark(pr?.tp1Hit,!t.tp1Done&&!pr?.tp1Hit,false)}"><div class="tiny">TP1 partial</div><b>$${fmt(t.tp1,1)}</b><div class="tiny">${t.tp1Done?'Marked taken':'Take 30%-35%'}</div></div>`,
+        `<div class="${mark(pr?.tp2Hit,t.tp1Done&&!pr?.tp2Hit,false)}"><div class="tiny">TP2 / runner</div><b>$${fmt(t.tp2,1)}</b><div class="tiny">Close planned portion</div></div>`
+      ].join('');
+      $('activeInstructions').innerHTML=[
+        `<div class="mini-item"><b>${act.label}</b><span class="tiny">${act.text}</span></div>`,
+        `<div class="mini-item"><b>Position snapshot</b><span class="tiny">${t.side} ${t.lev}x isolated, margin ${fmt(t.margin,0)} USDT, notional ${fmt(t.notional,0)} USDT. Current move ${pr?`${pr.moveR>=0?'+':''}${pr.moveR.toFixed(2)}R`:'--'}; ROI ${Number.isFinite(roi)?`${roi>=0?'+':''}${pct(roi*100,1)}`:'--'}.</span></div>`,
+        `<div class="mini-item"><b>Frozen thesis</b><span class="tiny">${t.signalReason||'Tracked from dashboard signal.'}</span></div>`,
+        binanceSnapshotItem()
+      ].join('');
+      return;
+    }
+    $('activeUpdated').textContent='No active contract';$('activeSide').textContent=suggested?`Suggested ${suggested.side}`:'--';$('activeSide').className=`big ${suggested?.side==='LONG'?'green':suggested?.side==='SHORT'?'red':''}`;
+    $('activeLive').textContent=state.price?`$${fmt(state.price,1)}`:'--';$('activePnl').textContent='--';$('activePnl').className='big';$('activeNext').textContent=suggested?'Entry zone':'--';$('activeAction').textContent=suggested?'REVIEW':'WAIT';$('activeAction').className=`big ${suggested?'amber':''}`;$('activeTp1Done').checked=false;
+    $('exitPressurePct').textContent='--';$('exitPressureFill').style.width='0%';$('exitPressureText').textContent=suggested?'No active contract. Exit pressure starts after you confirm entry.':'No active contract pressure.';
+    $('trackHint').textContent=suggested?`Suggested ${suggested.side}: enter only inside $${fmt(suggested.entryLow,0)} - $${fmt(suggested.entryHigh,0)} after your exchange order is actually filled. Tick this after entry so I can track exits.`:'This becomes available only when the master call is LONG or SHORT. It records the current entry plan locally and watches stop / TP levels against live BTC.';
+    $('activeStages').innerHTML=suggested?[
+      `<div class="stage now"><div class="tiny">Entry zone</div><b>$${fmt(suggested.entryLow,0)} - $${fmt(suggested.entryHigh,0)}</b><div class="tiny">Mid $${fmt(suggested.entry,1)}</div></div>`,
+      `<div class="stage danger"><div class="tiny">Stop / back out</div><b>$${fmt(suggested.stop,1)}</b><div class="tiny">Risk ${fmt(suggested.plannedLoss,1)} USDT</div></div>`,
+      `<div class="stage"><div class="tiny">TP1 partial</div><b>$${fmt(suggested.tp1,1)}</b><div class="tiny">Take 30%-35%</div></div>`,
+      `<div class="stage"><div class="tiny">TP2 target</div><b>$${fmt(suggested.tp2,1)}</b><div class="tiny">Est. +${fmt(suggested.tp2Profit,1)} USDT</div></div>`
+    ].join(''):'<div class="stage"><div class="tiny">Entry</div><b>--</b></div><div class="stage"><div class="tiny">Stop</div><b>--</b></div><div class="stage"><div class="tiny">TP1</div><b>--</b></div><div class="stage"><div class="tiny">TP2</div><b>--</b></div>';
+    $('activeInstructions').innerHTML=suggested?[
+      `<div class="mini-item"><b>Suggested ${suggested.side} plan</b><span class="tiny">Entry zone $${fmt(suggested.entryLow,1)} - $${fmt(suggested.entryHigh,1)}, stop $${fmt(suggested.stop,1)}, TP1 $${fmt(suggested.tp1,1)}, TP2 $${fmt(suggested.tp2,1)}.</span></div>`,
+      `<div class="mini-item"><b>After you enter</b><span class="tiny">Tick the box above only after the Binance order is filled. The monitor will freeze these levels and tell you when stop, TP1, TP2, or runner exit rules trigger.</span></div>`,
+      binanceSnapshotItem()
+    ].join(''):`<div class="mini-item"><b>No live contract being tracked</b><span class="tiny">When the master call becomes LONG or SHORT and you actually enter on Binance, tick the box above. The dashboard will keep the live exit checklist visible.</span></div>${binanceSnapshotItem()}`;
+  }
   function renderModel(){
     const m=state.model;if(!m)return;$('modelProb').textContent=`${Math.round(m.p*100)}%`;$('modelAcc').textContent=pct(m.accuracy*100,1);$('modelN').textContent=fmt(m.n,0);$('corrTable').innerHTML=m.correlations.map(c=>{const w=Math.min(50,Math.abs(c.value)*220),left=c.value>=0?50:50-w;return `<div class="corr-row"><span>${c.name}</span><div class="corr-track"><i class="corr-zero"></i><i class="corr-fill" style="left:${left}%;width:${w}%;background:${c.value>=0?'var(--green)':'var(--red)'}"></i></div><b class="${c.value>=0?'green':'red'}">${c.value>=0?'+':''}${c.value.toFixed(2)}</b></div>`}).join('');
   }
-  function renderMacro(){state.macro.score=macroScore();$('macro10y').textContent=`${state.macro.yield10.toFixed(2)}%`;$('macroBrent').textContent=`$${state.macro.brent.toFixed(2)}`;$('macroFed').textContent=`${Math.round(state.macro.fedOdds)}%`;$('fedOdds').value=Math.round(state.macro.fedOdds);const s=state.macro.score;$('macroScore').textContent=s<-.25?'Bearish':s>.25?'Bullish':'Neutral';$('macroScore').className=s<-.25?'red':s>.25?'green':'amber';}
+  function renderAssetCorrelations(){
+    const assets=[state.macro.assets.gold,state.macro.assets.oil].filter(Boolean);
+    if(!assets.length){$('assetCorrTable').innerHTML='<div class="mini-item"><b>No correlation sample yet</b><span class="tiny">Refresh macro API to test BTC against GLD/gold proxy and Brent daily returns.</span></div>';return;}
+    $('assetCorrTable').innerHTML=assets.map(a=>{const st=assetStatus(a.name,a), cls=st.active?'green':'muted';return `<div class="mini-item"><b>${a.name} <span class="${cls}">${st.active?'active':'off'}</span></b><span class="tiny">${a.n} matched days • same-day corr ${a.same>=0?'+':''}${a.same.toFixed(2)} • 1-day lead ${a.lead1>=0?'+':''}${a.lead1.toFixed(2)} • latest ${a.latestAssetRet>=0?'+':''}${pct(a.latestAssetRet*100,2)}. ${st.reason}</span></div>`}).join('');
+  }
+  function renderMacro(){state.macro.score=macroScore();$('macro10y').textContent=`${state.macro.yield10.toFixed(2)}%`;$('macroBrent').textContent=`$${state.macro.brent.toFixed(2)}`;$('macroFed').textContent=`${Math.round(state.macro.fedOdds)}%`;$('fedOdds').value=Math.round(state.macro.fedOdds);const s=state.macro.score;$('macroScore').textContent=s<-.25?'Bearish':s>.25?'Bullish':'Neutral';$('macroScore').className=s<-.25?'red':s>.25?'green':'amber';renderAssetCorrelations();}
+  function renderBacktest(){
+    const b=state.backtest, cal=state.calibration||{longProb:.54,shortProb:.46,source:'default'};
+    $('backtestThreshold').textContent=`${Math.round(cal.longProb*100)} / ${Math.round(cal.shortProb*100)}`;
+    if(!b)return;
+    $('backtestAcc').textContent=pct(b.acc*100,1);$('backtestSignals').textContent=`${b.selected} / ${b.test}`;$('backtestReturn').textContent=b.avgRet==null?'--':`${b.avgRet>=0?'+':''}${pct(b.avgRet*100,3)}`;$('backtestReturn').className=`big ${b.avgRet>=0?'green':'red'}`;
+    $('backtestUpdated').textContent=`Updated ${new Date().toLocaleTimeString()}`;
+    const sigAcc=b.selectedAcc==null?'not enough qualified samples':pct(b.selectedAcc*100,1);
+    $('backtestInsights').innerHTML=[
+      `<div class="mini-item"><b>Holdout replay</b><span class="tiny">${b.rows} feature rows, ${b.test} newest rows held out, horizon 4h. Broad model accuracy ${pct(b.acc*100,1)}, Brier ${b.brier.toFixed(3)}.</span></div>`,
+      `<div class="mini-item"><b>Qualified setup filter</b><span class="tiny">${b.selected} threshold-qualified observations: ${b.longs} long and ${b.shorts} short. Qualified accuracy ${sigAcc}; average paper 4h directional return ${b.avgRet==null?'--':`${b.avgRet>=0?'+':''}${pct(b.avgRet*100,3)}`} before fees/slippage.</span></div>`,
+      `<div class="mini-item"><b>Calibration decision</b><span class="tiny">Live model gate is ${cal.source}: long needs ${pct(cal.longProb*100,1)} P(higher), short needs ${pct(cal.shortProb*100,1)} or lower. Retest/structure remains mandatory.</span></div>`
+    ].join('');
+  }
 
   function renderChart(){
     if(!window.LightweightCharts){$('chart').style.display='none';$('chartFallback').style.display='flex';return;} const c=state.candles[state.tf];if(!c.length)return;
@@ -531,18 +918,32 @@
       new ResizeObserver(()=>chart.applyOptions({width:$('chart').clientWidth,height:$('chart').clientHeight})).observe($('chart'));
     }
     state.candleSeries.setData(c);const I=calcIndicators(c),e9=[],e21=[];c.forEach((x,i)=>{if(I.E9[i]!=null)e9.push({time:x.time,value:I.E9[i]});if(I.E21[i]!=null)e21.push({time:x.time,value:I.E21[i]});});state.ema9Series.setData(e9);state.ema21Series.setData(e21);
-    for(const p of state.priceLines){try{state.candleSeries.removePriceLine(p)}catch(e){}}state.priceLines=[];if(state.setup){const s=state.setup;const lines=[['Support',s.support,'#ffca63'],['Resistance',s.resistance,'#67a4ff'],['Long trigger',s.long.trigger,'#44d69f'],['Short trigger',s.short.trigger,'#ff6b7b']];if(s.signal==='LONG'){lines.push(['Long stop',s.long.stop,'#ff6b7b'],['Long TP2',s.long.tp2,'#44d69f'])}if(s.signal==='SHORT'){lines.push(['Short stop',s.short.stop,'#ff6b7b'],['Short TP2',s.short.tp2,'#44d69f'])} lines.forEach(([title,price,color])=>{state.priceLines.push(state.candleSeries.createPriceLine({price,color,lineWidth:1,lineStyle:2,axisLabelVisible:true,title}))});}
+    for(const p of state.priceLines){try{state.candleSeries.removePriceLine(p)}catch(e){}}state.priceLines=[];if(state.setup){const s=state.setup;const lines=[['Support',s.support,'#ffca63'],['Resistance',s.resistance,'#67a4ff'],['Long trigger',s.long.trigger,'#44d69f'],['Short trigger',s.short.trigger,'#ff6b7b']];if(s.signal==='LONG'){lines.push(['Long stop',s.long.stop,'#ff6b7b'],['Long TP2',s.long.tp2,'#44d69f'])}if(s.signal==='SHORT'){lines.push(['Short stop',s.short.stop,'#ff6b7b'],['Short TP2',s.short.tp2,'#44d69f'])}if(state.activeContract){const t=state.activeContract;lines.push([`ACTIVE ${t.side} entry`,t.entry,'#edf3ff'],['ACTIVE stop',t.stop,'#ff6b7b'],['ACTIVE TP1',t.tp1,'#ffca63'],['ACTIVE TP2',t.tp2,'#44d69f']);} lines.forEach(([title,price,color])=>{state.priceLines.push(state.candleSeries.createPriceLine({price,color,lineWidth:1,lineStyle:2,axisLabelVisible:true,title}))});}
     state.chart.timeScale().fitContent();
   }
 
   async function refreshMacro(){
     const key=$('avKey').value.trim(); if(!key){alert('Enter an Alpha Vantage API key first. A free key is sufficient for this optional layer.');return;} localStorage.setItem('btcAVKey',key); $('macroUpdated').textContent='Refreshing...';
     try{
-      const [y,b]=await Promise.all([fetchJSON(`https://www.alphavantage.co/query?function=TREASURY_YIELD&interval=daily&maturity=10year&apikey=${encodeURIComponent(key)}`),fetchJSON(`https://www.alphavantage.co/query?function=BRENT&interval=daily&apikey=${encodeURIComponent(key)}`)]);
+      const btcDaily=fetchDailyBTC(180);
+      const y=await fetchJSON(`https://www.alphavantage.co/query?function=TREASURY_YIELD&interval=daily&maturity=10year&apikey=${encodeURIComponent(key)}`); await sleep(1200);
+      const b=await fetchJSON(`https://www.alphavantage.co/query?function=BRENT&interval=daily&apikey=${encodeURIComponent(key)}`); await sleep(1200);
+      const g=await fetchJSON(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GLD&outputsize=compact&apikey=${encodeURIComponent(key)}`);
       const yv=(y.data||[]).find(x=>x.value&&x.value!=='.'),bv=(b.data||[]).find(x=>x.value&&x.value!=='.');if(yv)state.macro.yield10=+yv.value;if(bv)state.macro.brent=+bv.value;state.macro.fedOdds=+$('fedOdds').value||state.macro.fedOdds;state.macro.score=macroScore();$('macroUpdated').textContent=`Updated ${new Date().toLocaleTimeString()}`; analyze();renderAll();
+      updateAssetCorrelations(await btcDaily,g,b);state.macro.score=macroScore();analyze();renderAll();
     }catch(e){console.error(e);$('macroUpdated').textContent='Macro API refresh failed';}
   }
   function applyMacro(){state.macro.fedOdds=clamp(+$('fedOdds').value||64,0,100);state.macro.score=macroScore();analyze();renderAll();}
+  async function runBacklogReplay(){
+    $('backtestUpdated').textContent='Running replay...';
+    try{
+      const c=state.candles['1h'].length>=500?state.candles['1h']:await fetchKlines('1h',1000);
+      state.candles['1h']=c;
+      const {rows}=featureRows(c,4), result=holdoutReplay(rows);
+      if(!result){$('backtestUpdated').textContent='Replay needs more history';return;}
+      state.backtest=result; analyze(); renderAll();
+    }catch(e){console.error(e);$('backtestUpdated').textContent='Replay failed';}
+  }
 
   function saveEntry(){
     const side=$('jSide').value, entry=+$('jEntry').value||state.price,margin=+$('jMargin').value,lev=+$('jLev').value,stop=+$('jStop').value,tp=+$('jTp').value;if(!entry||!margin||!lev){alert('Entry, margin and leverage are required.');return;}
@@ -553,7 +954,14 @@
     const move=(exit/t.entry-1)*(t.side==='LONG'?1:-1),notional=t.margin*t.lev,pnl=notional*move;
     return {pnl,roi:pnl/t.margin};
   }
-  function closeTrade(id){const t=state.journal.find(x=>x.id===id);if(!t)return;const raw=prompt(`Close ${t.side} from $${t.entry}. Enter exit price:`,state.price?state.price.toFixed(1):'');if(raw==null)return;const exit=+raw;if(!exit)return;const move=(exit/t.entry-1)*(t.side==='LONG'?1:-1),notional=t.margin*t.lev,pnl=notional*move;t.exit=exit;t.pnl=pnl;t.roi=pnl/t.margin;t.status='CLOSED';t.closed=new Date().toISOString();persistJournal();renderJournal();analyze();renderAll();}
+  function closeTrade(id){const t=state.journal.find(x=>x.id===id);if(!t)return;const raw=prompt(`Close ${t.side} from $${t.entry}. Enter exit price:`,state.price?state.price.toFixed(1):'');if(raw==null)return;const exit=+raw;if(!exit)return;const move=(exit/t.entry-1)*(t.side==='LONG'?1:-1),notional=t.margin*t.lev,pnl=notional*move;t.exit=exit;t.pnl=pnl;t.roi=pnl/t.margin;t.status='CLOSED';t.closed=new Date().toISOString();if(state.activeContract?.journalId===id){state.activeContract=null;localStorage.removeItem('btcActiveContract');}persistJournal();renderJournal();analyze();renderAll();}
+  function closeActiveAtLivePrice(){
+    const t=state.activeContract;if(!t)return;if(!state.price){alert('Live BTC price is unavailable.');return;}
+    const live=liveTradePnl(t,state.price), row=state.journal.find(x=>x.id===t.journalId);
+    if(row){row.exit=state.price;row.pnl=live.pnl;row.roi=live.roi;row.status='CLOSED';row.closed=new Date().toISOString();row.notes=[row.notes,'Closed from active monitor at live price'].filter(Boolean).join(' | ');}
+    else state.journal.unshift({id:t.journalId||Date.now(),time:t.started||new Date().toISOString(),side:t.side,entry:t.entry,exit:state.price,margin:t.margin,lev:t.lev,stop:t.stop,tp:t.tp2,pnl:live.pnl,roi:live.roi,status:'CLOSED',closed:new Date().toISOString(),notes:'Closed from active monitor at live price'});
+    state.activeContract=null;localStorage.removeItem('btcActiveContract');persistJournal();analyze();renderAll();
+  }
   function settleOpenTradeAtLivePrice(){
     const open=state.journal.filter(t=>t.status==='OPEN');
     if(!open.length){alert('No open journal trades to mark.');return;}
@@ -563,7 +971,7 @@
     const idx=(+raw||0)-1,t=open[idx]; if(!t)return;
     const live=liveTradePnl(t,state.price); t.exit=state.price;t.pnl=live.pnl;t.roi=live.roi;t.status='CLOSED';t.closed=new Date().toISOString();t.notes=[t.notes,'Marked from live dashboard price'].filter(Boolean).join(' | ');persistJournal();renderAll();
   }
-  function deleteTrade(id){state.journal=state.journal.filter(x=>x.id!==id);persistJournal();renderJournal();renderAccountCapture();renderRecovery();}
+  function deleteTrade(id){state.journal=state.journal.filter(x=>x.id!==id);if(state.activeContract?.journalId===id){state.activeContract=null;localStorage.removeItem('btcActiveContract');}persistJournal();renderJournal();renderAccountCapture();renderRecovery();renderActiveContract();}
   function persistJournal(){localStorage.setItem('btcRebuildJournal',JSON.stringify(state.journal));}
   function renderJournal(){
     const body=$('journalBody');body.innerHTML=state.journal.length?state.journal.map(t=>{const live=t.status==='OPEN'?liveTradePnl(t):{pnl:t.pnl,roi:t.roi};const pnl=Number.isFinite(t.pnl)?t.pnl:live.pnl,roi=Number.isFinite(t.roi)?t.roi:live.roi;return `<tr><td>${new Date(t.time).toLocaleString()}</td><td class="${t.side==='LONG'?'green':'red'}">${t.side}</td><td>$${fmt(t.entry,1)}</td><td>${t.exit?'$'+fmt(t.exit,1):'OPEN'}</td><td>${fmt(t.margin,0)}</td><td>${t.lev}x</td><td class="${pnl>0?'green':pnl<0?'red':''}">${Number.isFinite(pnl)?`${pnl>=0?'+':''}${fmt(pnl,1)}${t.status==='OPEN'?' live':''}`:'--'}</td><td>${Number.isFinite(roi)?`${roi>=0?'+':''}${pct(roi*100,1)}`:'--'}</td><td>${Number.isFinite(t.modelP)?`${Math.round((t.side==='LONG'?t.modelP:1-t.modelP)*100)}%`:'--'}</td><td>${t.status==='OPEN'?'<span class="amber">OPEN LIVE</span>':t.pnl>0?'<span class="green">WIN</span>':'<span class="red">LOSS</span>'}</td><td>${t.status==='OPEN'?`<button class="btn green" onclick="window.__closeTrade(${t.id})">Close</button>`:`<button class="btn" onclick="window.__deleteTrade(${t.id})">Delete</button>`}</td></tr>`}).join(''):'<tr><td colspan="11" class="muted">No journal entries yet. Capture the technical snapshot when you actually enter a contract.</td></tr>';
@@ -622,18 +1030,82 @@
   function exportJournal(){
     const rows=[['time','source','side','entry','exit','margin','leverage','pnl','roi','model_prob_long','status','notes'],...state.journal.map(t=>[t.time,t.source||'MANUAL',t.side,t.entry,t.exit||'',t.margin,t.lev,t.pnl??'',t.roi??'',t.modelP??'',t.status,(t.notes||'').replaceAll(',',' ')])];const blob=new Blob([rows.map(r=>r.join(',')).join('\n')],{type:'text/csv'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='btc_trade_journal.csv';a.click();URL.revokeObjectURL(u);
   }
-  function maybeNotify(signal,reason){if(signal!=='LONG'&&signal!=='SHORT')return;if(state.notifiedSignal===signal)return;state.notifiedSignal=signal;if(Notification.permission==='granted')new Notification(`BTC ${signal} setup detected`,{body:reason});}
+  function persistEmailAlerts(){localStorage.setItem('btcEmailAlerts',JSON.stringify(state.emailAlerts));}
+  function renderEmailAlerts(){
+    if(!$('emailEnabled'))return;
+    const a=state.emailAlerts;$('emailEnabled').checked=!!a.enabled;$('emailTo').value=a.to||DEFAULT_ALERT_EMAIL;$('emailEndpoint').value=a.endpoint||'/api/send-alert';$('emailToken').value=a.token||'';$('emailCooldown').value=a.cooldownMin||30;
+    $('emailStatus').textContent=a.enabled?(a.endpoint?'Armed: automatic webhook':'Armed: draft fallback'):'Not armed';
+    if(a.lastStatus)$('emailStatus').textContent=a.lastStatus;
+  }
+  function saveEmailAlerts(){
+    state.emailAlerts={...state.emailAlerts,enabled:$('emailEnabled').checked,to:$('emailTo').value.trim()||DEFAULT_ALERT_EMAIL,endpoint:$('emailEndpoint').value.trim()||'/api/send-alert',token:$('emailToken').value.trim(),cooldownMin:clamp(+$('emailCooldown').value||30,5,240)};
+    state.emailAlerts.lastStatus=state.emailAlerts.enabled?(state.emailAlerts.endpoint?'Armed: automatic webhook':'Armed: draft fallback'):'Not armed';
+    persistEmailAlerts();renderEmailAlerts();
+  }
+  function alertPayload(signal,reason){
+    const p=currentPlan(signal.toLowerCase()), s=state.setup, gateSide=signal==='LONG'?s?.long:s?.short, confidence=signal==='LONG'?s?.pHigher:1-(s?.pHigher??.5);
+    return {to:state.emailAlerts.to||DEFAULT_ALERT_EMAIL,subject:`BTCUSDT ${signal} A+ setup detected`,symbol:'BTCUSDT',signal,reason,timestamp:new Date().toISOString(),price:state.price,probability:confidence,entryLow:p?.entryLow,entryHigh:p?.entryHigh,entry:p?.entry,stop:p?.stop,tp1:p?.tp1,tp2:p?.tp2,leverage:p?.lev,margin:p?.margin,notional:p?.notional,plannedLoss:p?.plannedLoss,gatesPassed:gateSide?.count,gateTotal:6,funding:state.funding,openInterest:state.oi,macroScore:state.macro.score};
+  }
+  function emailBody(payload){
+    return [
+      `${payload.subject}`,
+      '',
+      `Signal: ${payload.signal}`,
+      `Reason: ${payload.reason}`,
+      `Live price: $${fmt(payload.price,1)}`,
+      `Entry zone: $${fmt(payload.entryLow,1)} - $${fmt(payload.entryHigh,1)}`,
+      `Mid entry: $${fmt(payload.entry,1)}`,
+      `Stop: $${fmt(payload.stop,1)}`,
+      `TP1: $${fmt(payload.tp1,1)}`,
+      `TP2: $${fmt(payload.tp2,1)}`,
+      `Suggested leverage: ${payload.leverage||'--'}x isolated`,
+      `Suggested margin: ${fmt(payload.margin,1)} USDT`,
+      `Planned max loss: ${fmt(payload.plannedLoss,1)} USDT`,
+      `Probability: ${pct((payload.probability??.5)*100,1)}`,
+      `Gates: ${payload.gatesPassed||'--'}/${payload.gateTotal}`,
+      `Funding: ${pct((payload.funding??0)*100,4)}`,
+      `Open interest: ${fmt(payload.openInterest,0)} BTC`,
+      '',
+      'Decision support only. Confirm manually on Binance; the dashboard does not place orders.'
+    ].join('\n');
+  }
+  function openEmailDraft(payload){
+    const body=emailBody(payload), url=`mailto:${encodeURIComponent(payload.to)}?subject=${encodeURIComponent(payload.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href=url;
+  }
+  async function sendEmailAlert(signal,reason,{force=false,draftOnly=false}={}){
+    saveEmailAlerts();const cfg=state.emailAlerts;if(!cfg.enabled&&!force)return;
+    const payload=alertPayload(signal,reason), key=`${payload.signal}:${Math.round((payload.entry||state.price||0)/25)*25}:${payload.gatesPassed}`;
+    const now=Date.now(), cooldown=(cfg.cooldownMin||30)*60000;
+    if(!force&&cfg.lastKey===key&&now-(cfg.lastAt||0)<cooldown)return;
+    if(draftOnly||!cfg.endpoint){openEmailDraft(payload);cfg.lastStatus=`Draft opened ${new Date().toLocaleTimeString()}`;cfg.lastKey=key;cfg.lastAt=now;persistEmailAlerts();renderEmailAlerts();return;}
+    try{
+      const headers={'Content-Type':'application/json'};if(cfg.token)headers['X-Alert-Token']=cfg.token;
+      const res=await fetch(cfg.endpoint,{method:'POST',headers,body:JSON.stringify(payload)});
+      if(!res.ok)throw new Error(`HTTP ${res.status}`);
+      cfg.lastStatus=`Email sent ${new Date().toLocaleTimeString()}`;cfg.lastKey=key;cfg.lastAt=now;
+    }catch(e){
+      cfg.lastStatus='Webhook failed; opening draft';openEmailDraft(payload);
+    }
+    persistEmailAlerts();renderEmailAlerts();
+  }
+  function testEmailAlert(){
+    const signal=state.setup&&['LONG','SHORT'].includes(state.setup.signal)?state.setup.signal:'LONG';
+    const reason=state.setup?.reason||'Test alert from BTC Rebuild Command Center.';
+    sendEmailAlert(signal,reason,{force:true,draftOnly:!$('emailEndpoint').value.trim()});
+  }
+  function maybeNotify(signal,reason){if(signal!=='LONG'&&signal!=='SHORT'){state.notifiedSignal=null;return;}logDirectionalDecision(signal,reason);if(state.notifiedSignal===signal)return;state.notifiedSignal=signal;if(Notification.permission==='granted')new Notification(`BTC ${signal} setup detected`,{body:reason});sendEmailAlert(signal,reason);}
   async function enableNotifications(){if(!('Notification'in window)){alert('Browser notifications are not supported here.');return;}const p=await Notification.requestPermission();$('notifyBtn').textContent=p==='granted'?'Browser alerts enabled':'Alerts blocked';}
 
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.tf=b.dataset.tf;if(state.chart){state.candleSeries.setData([]);state.ema9Series.setData([]);state.ema21Series.setData([]);}renderChart();startWebSocket();}));
-  ['capital','riskPct','marginCap','calcSide'].forEach(id=>$(id).addEventListener('input',()=>{renderSizing();renderRecovery();}));$('macroRefresh').onclick=refreshMacro;$('macroApply').onclick=applyMacro;$('applyManual').onclick=applyManualMap;$('seedManual').onclick=seedManualMap;$('saveEntry').onclick=saveEntry;$('exportJournal').onclick=exportJournal;$('clearJournal').onclick=()=>{if(confirm('Delete all locally saved journal entries?')){state.journal=[];persistJournal();renderAll();}};$('notifyBtn').onclick=enableNotifications;
+  ['capital','riskPct','marginCap','calcSide'].forEach(id=>$(id).addEventListener('input',()=>{renderSizing();renderActiveContract();renderRecovery();}));$('macroRefresh').onclick=refreshMacro;$('macroApply').onclick=applyMacro;$('runBacktest').onclick=runBacklogReplay;$('applyManual').onclick=applyManualMap;$('seedManual').onclick=seedManualMap;$('trackSetup').addEventListener('change',ev=>ev.target.checked?trackSuggestedContract():clearActiveContract());$('activeTp1Done').addEventListener('change',ev=>setTp1Done(ev.target.checked));$('closeActiveNow').onclick=closeActiveAtLivePrice;$('clearActive').onclick=()=>clearActiveContract();$('saveEntry').onclick=saveEntry;$('exportJournal').onclick=exportJournal;$('clearJournal').onclick=()=>{if(confirm('Delete all locally saved journal entries?')){state.journal=[];state.activeContract=null;localStorage.removeItem('btcActiveContract');persistJournal();renderAll();}};$('notifyBtn').onclick=enableNotifications;$('saveEmailAlerts').onclick=saveEmailAlerts;$('testEmailAlert').onclick=testEmailAlert;$('draftEmailAlert').onclick=()=>{const signal=state.setup&&['LONG','SHORT'].includes(state.setup.signal)?state.setup.signal:'LONG';sendEmailAlert(signal,state.setup?.reason||'Draft alert from BTC Rebuild Command Center.',{force:true,draftOnly:true});};$('exportDecisionLog').onclick=exportDecisionLog;$('clearDecisionLog').onclick=()=>{if(confirm('Clear directional decision log?')){state.decisionLog=[];persistDecisionLog();renderDecisionLog();}};
   $('accountCsv').addEventListener('change',ev=>{const file=ev.target.files&&ev.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>importAccountCSV(String(reader.result||''));reader.readAsText(file);ev.target.value='';});
   $('importPastedCsv').onclick=()=>importAccountCSV($('accountCsvText').value);
   $('clearImported').onclick=()=>{if(confirm('Delete imported Binance/export rows but keep manual journal entries?')){state.journal=state.journal.filter(t=>t.source!=='BINANCE_CSV');persistJournal();renderAll();}};
   $('settleOpenNow').onclick=settleOpenTradeAtLivePrice;
   const savedKey=localStorage.getItem('btcAVKey')||DEFAULT_ALPHA_VANTAGE_KEY;if(savedKey){$('avKey').value=savedKey;localStorage.setItem('btcAVKey',savedKey);}
   setInterval(async()=>{await refreshMarket();},60000);
-  renderMacro();renderJournal();renderAccountCapture();renderRecovery();refreshMarket();
+  renderMacro();renderJournal();renderAccountCapture();renderRecovery();renderDecisionLog();refreshMarket();
 })();
 </script>
 </body>
